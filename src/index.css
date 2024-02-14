@@ -1,0 +1,111 @@
+:root {
+  /* Background & Elements Colors */
+  --main-background-color: url('./assets/img/backgrounds/white-back.png');
+  --second-background-color: url('./assets/img/backgrounds/black-back.png');
+  --background-elements: #fff;
+  --main-text-color: #000;
+  --secondary-text-color: #fff;
+  --rock-red: #ff2d2d;
+  --shadow: 5px 5px 15px rgba(0, 0, 0, .15);
+
+  --contact-background-color: #000;
+  --contact-text-color: #fff;
+  /* Contact Button */
+  --hover-background-btn: #fb6b6b;
+  --radius-contact-button: 10px;
+  --text-button-color: #fff;
+  --icon-color: invert(0);
+  /* Font Props */
+  --fira-font: 'Fira Sans', sans-serif;;
+  --fira-thin: 100;
+  --fira-extra-light: 200;
+  --fira-light: 300;
+  --fira-regular: 400;
+  --fira-medium: 500;
+  --fira-semi-bold: 600;
+  --fira-bold: 700;
+  --fira-extrabold: 800;
+  --fira-black: 900;
+  --title-size: 3rem;
+  --subtitle-size: 1.5rem;
+  --hero-text-size: 1.2rem;
+  --paragraph-size: 1rem;
+  --links-size: .9rem;
+}
+
+[data-theme="dark"] {
+  --main-background-color: url('./assets/img/backgrounds/black-back.png');
+  --second-background-color: url('./assets/img/backgrounds/white-back.png');
+  --shadow: 5px 5px 15px rgba(255, 255, 255, .15);
+  --background-elements: #191919;
+  --contact-background-color: #fff;
+  --contact-text-color: #000;
+  --main-text-color: #fff;
+  --secondary-text-color: #000;
+  --icon-color: invert(1);
+}
+
+*{
+  font-family: var(--fira-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  transition: .15s ease-in-out;
+  color: var(--main-text-color);
+  background-image: var(--main-background-color);
+  background-position: top;
+  background-size: contain;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title-section {
+  width: 7rem;
+  padding: .75rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: var(--paragraph-size);
+  font-weight: var(--fira-semi-bold);
+  background-color: var(--background-elements);
+  color: var(--main-text-color);
+  box-shadow: var(--shadow);
+}
+
+.subtitle-section {
+  margin: 1.5rem 0;
+  font-size: var(--subtitle-size);
+  font-weight: var(--fira-semi-bold);
+  color: var(--rock-red);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+
+  & .link-icon {
+    width: 1.25rem;
+    margin-right: .5rem;
+    filter: var(--icon-color);
+  }
+
+  & a {
+    font-size: var(--links-size);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .15s ease-in-out;
+
+    &:hover {
+      color: var(--rock-red);
+    }
+  }
+}

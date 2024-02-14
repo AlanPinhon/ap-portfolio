@@ -1,0 +1,19 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+
+.experience-timeline-container {
+  width: 30rem;
+  margin: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-date {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

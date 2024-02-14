@@ -1,0 +1,61 @@
+.nav-container {
+  padding: 2.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: var(--background-elements);
+  box-shadow: var(--shadow);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+
+  & img {
+    width: 1rem;
+    filter: var(--icon-color);
+  }
+}
+
+.nav-ap-logo {
+  width: 3rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+
+  & .header-nav-link {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: var(--main-text-color);
+    font-size: var(--links-size);
+    font-weight: var(--fira-medium);
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: var(--rock-red);
+    }
+  }
+
+  & .header-nav-contact-btn {
+    text-decoration: none;
+    border-radius: var(--radius-contact-button);
+    background-color: var(--rock-red);
+    color: var(--text-button-color);
+    font-weight: var(--fira-bold);
+    font-size: .85rem;
+    padding: .6rem 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    
+    &:hover {
+      background-color: var(--hover-background-btn);
+    }
+  }
+}

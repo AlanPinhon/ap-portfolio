@@ -1,0 +1,18 @@
+.contact-btn {
+  width: 10rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--hero-text-size);
+  font-weight: var(--fira-extrabold);
+  border-radius: var(--radius-contact-button);
+  background-color: var(--rock-red);
+  color: var(--text-button-color);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    background-color: var(--hover-background-btn);
+  }
+}

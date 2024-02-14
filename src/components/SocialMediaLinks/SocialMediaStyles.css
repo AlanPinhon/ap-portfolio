@@ -1,0 +1,14 @@
+.social-media-container {
+  display: flex;
+  justify-content: center;
+
+  & li {
+    list-style: none;
+
+    & .social-media-link img {
+      width: 1.5rem;
+      margin: 0 .2rem;
+      filter: var(--icon-color);
+    }
+  }
+}

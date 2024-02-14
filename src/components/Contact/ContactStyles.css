@@ -1,0 +1,33 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+  color: var(--main-text-color);
+}
+
+.contact-info {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: var(--second-background-color);
+
+  & .contact-me-text {
+    display: flex;
+    flex-direction: column;
+
+    & .contact-me {
+      margin-bottom: 1rem;
+      color: var(--rock-red);
+
+      font-weight: var(--fira-semi-bold);
+      font-size: var(--subtitle-size);
+    }
+    
+    & .contact-me-text {
+      color: var(--secondary-text-color);
+    }
+  }
+}
