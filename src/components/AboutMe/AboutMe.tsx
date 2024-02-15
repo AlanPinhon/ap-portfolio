@@ -1,4 +1,4 @@
-import AlanPhoto from '../../assets/img/ap-photos/foto_ap_perfil.jpg';
+import AlanPhoto from '../../assets/img/ap-photos/foto_ap_perfil.webp';
 import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
 import './AboutMeStyles.css';
 

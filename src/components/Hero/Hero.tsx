@@ -1,5 +1,5 @@
 import { ContactButton } from "../ContactButton/ContactButton"
-import AlanPhoto from '../../assets/img/ap-photos/foto_hero.jpg';
+import AlanPhoto from '../../assets/img/ap-photos/foto_hero.webp';
 import './HeroStyles.css';
 
 export const Hero = () => {
