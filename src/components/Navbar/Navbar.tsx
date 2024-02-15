@@ -22,6 +22,7 @@ export const Navbar = () => {
   };
   
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
   
   useEffect(() => {
     const query = window.matchMedia('(prefers-color-scheme: dark)');
@@ -49,9 +50,9 @@ export const Navbar = () => {
     </button>
     
     <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
-      <a onClick={toggleMenu} className="header-nav-link" href="#about-me">Sobre mi</a>
-      <a onClick={toggleMenu} className="header-nav-link" href="#projects">Proyectos</a>
-      <a onClick={toggleMenu} className="header-nav-link" href="#contact"> Contacto </a>
+      <a onClick={closeMenu} className="header-nav-link" href="#about-me">Sobre mi</a>
+      <a onClick={closeMenu} className="header-nav-link" href="#projects">Proyectos</a>
+      <a onClick={closeMenu} className="header-nav-link" href="#contact"> Contacto </a>
 
       <button onClick={toggleTheme} className="theme-btn">
         <img src={(theme === 'light') ? Moon : Sun} alt="theme-icon" />
