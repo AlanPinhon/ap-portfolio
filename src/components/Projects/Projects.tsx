@@ -1,7 +1,7 @@
 import { DevProjectCard } from '../DevProjectCard/DevProjectCard';
-import CountriesImg from '../../assets/img/project-img/rest-countries-desktop-preview.jpg';
-import ShortlyImg from '../../assets/img/project-img/shortly-app-desktop-preview.jpg';
-import AdvicesImg from '../../assets/img/project-img/advice-generator-desktop-preview.jpg';
+import CountriesImg from '../../assets/img/project-img/rest-countries-desktop-preview.webp';
+import ShortlyImg from '../../assets/img/project-img/shortly-app-desktop-preview.webp';
+import AdvicesImg from '../../assets/img/project-img/advice-generator-desktop-preview.webp';
 import './ProjectsStyles.css'
 
 export const Projects = () => (
