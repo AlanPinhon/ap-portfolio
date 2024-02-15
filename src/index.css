@@ -4,9 +4,10 @@
   --second-background-color: url('./assets/img/backgrounds/black-back.png');
   --background-elements: #fff;
   --main-text-color: #000;
+  --menu-background: rgba(242, 242, 242, 0.95);
   --secondary-text-color: #fff;
   --rock-red: #ff2d2d;
-  --shadow: 5px 5px 15px rgba(0, 0, 0, .15);
+  --shadow: 3px 3px 10px rgba(0, 0, 0, .03);
 
   --contact-background-color: #000;
   --contact-text-color: #fff;
@@ -37,7 +38,8 @@
   --main-background-color: url('./assets/img/backgrounds/black-back.png');
   --second-background-color: url('./assets/img/backgrounds/white-back.png');
   --shadow: 5px 5px 15px rgba(255, 255, 255, .15);
-  --background-elements: #191919;
+  --menu-background: rgba(0, 0, 0, 0.90);
+  --background-elements: #141414;
   --contact-background-color: #fff;
   --contact-text-color: #000;
   --main-text-color: #fff;
@@ -53,11 +55,11 @@
 }
 
 body{
-  transition: .15s ease-in-out;
   color: var(--main-text-color);
   background-image: var(--main-background-color);
   background-position: top;
-  background-size: contain;
+  background-size: cover;
+  transition: .15s ease-in-out;
 }
 
 .container {

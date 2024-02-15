@@ -21,6 +21,7 @@
       object-fit: fill;
       object-position: center center;
       box-shadow: var(--shadow);
+      border: .2rem solid var(--rock-red);
     }
   }
 }
@@ -43,11 +44,52 @@
 }
 
 .about-me-info-container {
-  width: 45rem;
+  width: 65%;
+
+  & .subtitle-section {
+    width: 75%;
+  }
 
   & .about-me-text {
     margin: 1rem 0;
     font-size: var(--paragraph-size);
     font-weight: var(--fira-regular);
   }
+}
+
+@media screen and (max-width: 930px) {
+  .about-me-info-container {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .about-me-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-me-img-container .about-me-img {
+    width: 13rem;
+  }
+
+  .about-me-info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    & .subtitle-section,
+      .about-me-text {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .about-me-container {
+    padding: 2.5rem;
+  }
+
 }

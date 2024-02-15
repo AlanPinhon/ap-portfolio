@@ -11,3 +11,9 @@
   }
 
 }
+
+@media screen and (max-width: 500px) {
+  .course-container {
+    height: 12rem;
+  }
+}

@@ -17,7 +17,6 @@ export const AboutMe = () => (
       <h2 className="title-section" id="about-me">Sobre mi</h2>
       <h3 className="subtitle-section">
         Fusionando creatividad y código para construir
-        <br />
         experiencias digitales sorprendentes.
       </h3>
       <p className="about-me-text">

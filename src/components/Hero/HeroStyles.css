@@ -7,8 +7,9 @@
 .welcome-container-presentation {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  width: 35rem;
+  width: 25rem;
 
   & .welcome-text {
     font-size: var(--subtitle-size);
@@ -33,7 +34,7 @@
 }
 
 .welcome-photo-container {
-  width: 35%;
+  width: 22.5rem;
 
   & img{
     width: 100%;
@@ -42,4 +43,50 @@
     object-fit: fill;
     object-position: center center;
   }
+}
+
+@media screen and (max-width: 930px) {
+  .welcome-container-presentation,
+  .welcome-photo-container {
+    width: 19.5rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .welcome-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-photo-container {
+    width: 19rem;
+  }
+
+  .welcome-container-presentation {
+    width: 80%;
+    margin-top: 4rem;
+    align-items: center;
+    text-align: center;
+
+    & .description {
+      margin: 2rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .welcome-container {
+    padding: 2.5rem;
+  }
+
+  .welcome-photo-container {
+    width: 75%;
+  }
+
+  .welcome-container-presentation {
+    width: 90%;
+  }
+
 }

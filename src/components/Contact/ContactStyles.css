@@ -1,7 +1,7 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 5rem;
+  padding: 5rem;
   color: var(--main-text-color);
 }
 
@@ -26,8 +26,32 @@
       font-size: var(--subtitle-size);
     }
     
-    & .contact-me-text {
+    & .contact-me-info {
       color: var(--secondary-text-color);
     }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .contact-info { 
+    flex-direction: column;
+
+    & .contact-me-text {
+      margin: 1rem 0 2rem;
+
+      & .contact-me {
+        text-align: center;
+      }
+
+      & .contact-me-info {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-container {
+    padding: 2.5rem;
   }
 }

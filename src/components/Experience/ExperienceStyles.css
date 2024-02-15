@@ -17,3 +17,19 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 650px) {
+
+  .experience-timeline-container {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .experience-container {
+    padding: 2.5rem;
+  }
+
+}

@@ -2,8 +2,8 @@ import { useContext } from 'react';
 import LightLogo from '../../assets/img/ap-logos/logo-ap-1.svg';
 import DarkLogo from '../../assets/img/ap-logos/logo-ap-2.svg';
 import { ContactButton } from '../ContactButton/ContactButton';
-import './ContactStyles.css';
 import { ThemeContext } from '../../context/ThemeContext';
+import './ContactStyles.css';
 
 export const Contact = () => {
 
@@ -19,7 +19,7 @@ export const Contact = () => {
 
         <div className="contact-me-text">
           <h3 className="contact-me">¡Colaboremos juntos!</h3>
-          <p className="contact-me-text">
+          <p className="contact-me-info">
             Estoy disponible para discutir oportunidades
             <br />
             profesionales y responder a cualquier pregunta.

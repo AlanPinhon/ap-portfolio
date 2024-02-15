@@ -6,7 +6,15 @@
 }
 
 .project-cards-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+
+  .projects-container {
+    padding: 2.5rem;
+  }
 }

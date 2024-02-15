@@ -3,4 +3,32 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
+  
+  & p {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+  .footer-container{
+    flex-direction: column;
+
+    & p {
+      margin-bottom: 1rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .footer-container {
+    padding: 2.5rem;
+
+    & p {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
 }

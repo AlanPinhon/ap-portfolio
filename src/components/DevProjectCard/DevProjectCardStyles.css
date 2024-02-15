@@ -72,3 +72,37 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 530px) {
+
+  .project-card {
+    width: 18rem;
+    height: 35rem;
+    margin: 1rem;
+  }
+
+  .project-img-container {
+    height: 10rem;
+  }
+
+  .project-info-container {
+    height: 25rem;
+
+    & .project-info .project-title {
+      font-size: var(--hero-text-size);
+    }
+
+    & .project-info .project-description {
+      height: 8rem;
+      font-size: var(--links-size);
+    }
+  }
+
+  .links-container {
+    flex-direction: column;
+
+    & .link-container {
+      margin: .5rem 0;
+    }
+  }
+}

@@ -45,7 +45,7 @@ export const Skills = () => (
           <SkillIcon
             src={Figma} 
             alt="figma-logo" 
-            iconName="Figma"
+            iconName="Figma (En proceso)"
           />
         </div>
       </div>
