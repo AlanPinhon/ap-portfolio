@@ -4,11 +4,11 @@ import './HeaderStyles.css';
 
 export const Header = () => {
   return (
-    <section className="header-container container">
+    <header className="header-container container">
       <div className="header-text-container">
         <div className="text-container">
-          <h3 className="welcome-text">Hola, mi nombre es</h3>
-          <h1 className="name-text">Alan Pinhon</h1>
+          <h3 className="welcome-text">¡Hola! Mi nombre es</h3>
+          <h1 className="name-text">Alan <span className="last-name">Pinhon</span></h1>
           <p className="description">
             <strong>Diseñador gráfico &</strong> Desarrollador Web Front-End Jr
           </p>
@@ -16,8 +16,8 @@ export const Header = () => {
       <ContactButton/>
       </div>
       <div className="welcome-photo-container">
-        <img src={AlanPhoto} alt="alan-pinhon-photo" />
+        <img src={AlanPhoto} alt="Foto de Alan Piñón" />
       </div>
-    </section>
+    </header>
   )
 }

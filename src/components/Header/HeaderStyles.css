@@ -11,27 +11,36 @@
   align-items: flex-start;
   justify-content: center;
   gap: 5rem;
-
+  
   & .text-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
+    
     & .welcome-text {
+      font-family: var( --cheddar-font);
       font-size: var(--subtitle-size);
-      font-weight: var(--fira-regular);
+      line-height: var(--subtitle-size);
+      font-weight: var(--cheddar-regular);
     }
-  
+    
     & .name-text {
+      font-family: var( --cheddar-font);
       color: var(--rock-red);
       font-size: var(--title-size);
-      font-weight: var(--fira-bold);
+      line-height: var(--title-size);
+      font-weight: var(--cheddar-regular);
+      
+      & .last-name {
+        font-family: var( --cheddar-font);
+        color: var(--main-text-color);
+      }
     }
   
     & .description {
-      margin: 1rem 0;
-      font-size: var(--hero-text-size);
-      font-weight: var(--fira-regular);
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      font-weight: var(--outfit-regular);
     }
   }
   
