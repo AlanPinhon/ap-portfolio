@@ -1,21 +1,31 @@
 :root {
-  /* Background & Elements Colors */
-  --main-background-color: url('./assets/img/backgrounds/white-back.webp');
-  --second-background-color: url('./assets/img/backgrounds/black-back.webp');
-  --background-elements: #fff;
-  --main-text-color: #000;
-  --menu-background: rgba(242, 242, 242, 0.95);
-  --secondary-text-color: #fff;
+  /* Main Colors */
+  --main-black: #000;
+  --main-white: #fff;
   --rock-red: #ff2d2d;
+  --soft-gray: #eee;
+  --dark-night: #0e0e10;
+  --light-gray: #ddd;
+  --dark-gray: #404040;
+
+  /* Gradients */
+  --gradient-header: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
+  
+  /* Background & Elements Colors */
+  --main-background-color: var(--soft-gray);
+  --back-btn-theme: var(--dark-night);
+  --main-text-color: var(--main-black);
+  --menu-background: var(--soft-gray);
+  --secondary-text-color: var(--light-gray);
   --shadow: 3px 3px 10px rgba(0, 0, 0, .03);
 
-  --contact-background-color: #000;
-  --contact-text-color: #fff;
+  --contact-background-color: var(--main-black);
+  --contact-text-color: var(--light-gray);
   /* Contact Button */
   --hover-background-btn: #fb6b6b;
   --radius-contact-button: 10px;
-  --text-button-color: #fff;
-  --icon-color: invert(0);
+  --text-button-color: var(--light-gray);
   /* Font Props */
   --fira-font: 'Fira Sans', sans-serif;;
   --fira-thin: 100;
@@ -35,16 +45,16 @@
 }
 
 [data-theme="dark"] {
-  --main-background-color: url('./assets/img/backgrounds/black-back.webp');
-  --second-background-color: url('./assets/img/backgrounds/white-back.webp');
+  --main-background-color: var(--dark-night);
+  --gradient-header: radial-gradient(50% 50% at 50% 50%, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
+  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   --shadow: 3px 3px 10px rgba(255, 255, 255, .10);
-  --menu-background: rgba(0, 0, 0, 0.9);
-  --background-elements: #2a2a2a;
-  --contact-background-color: #fff;
-  --contact-text-color: #000;
-  --main-text-color: #fff;
-  --secondary-text-color: #000;
-  --icon-color: invert(1);
+  --menu-background: var(--light-gray);
+  --back-btn-theme: var(--light-gray);
+  --contact-background-color: var(--light-gray);
+  --contact-text-color: var(--dark-night);
+  --main-text-color: var(--light-gray);
+  --secondary-text-color: var(--dark-night);
 }
 
 *{
@@ -56,14 +66,13 @@
 
 body{
   color: var(--main-text-color);
-  background-image: var(--main-background-color);
+  background-color: var(--main-background-color);
   background-position: top;
   background-size: cover;
-  transition: .15s ease-in-out;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1064px;
   margin: 0 auto;
 }
 
