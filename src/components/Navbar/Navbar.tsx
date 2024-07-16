@@ -1,8 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import LightLogo from '../../assets/img/ap-logos/logo-ap-1.svg';
 import DarkLogo from '../../assets/img/ap-logos/logo-ap-2.svg';
-import Sun from '../../assets/img/theme-icons/sun.svg';
-import Moon from '../../assets/img/theme-icons/moon.svg';
+import {DarkIcon, LightIcon} from '../../assets/icons';
 import MenuIcon from '../../assets/img/icon-hamburger.svg';
 import CloseIcon from '../../assets/img/icon-close.svg';
 import { ThemeContext } from '../../context/ThemeContext';
@@ -51,13 +50,14 @@ export const Navbar = () => {
     
     <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
       <a onClick={closeMenu} className="header-nav-link" href="#about-me">Sobre mi</a>
+      <a onClick={closeMenu} className="header-nav-link" href="#about-me">Experiencia</a>
       <a onClick={closeMenu} className="header-nav-link" href="#projects">Proyectos</a>
       <a onClick={closeMenu} className="header-nav-link" href="#contact"> Contacto </a>
-
-      <button onClick={toggleTheme} className="theme-btn">
-        <img src={(theme === 'light') ? Moon : Sun} alt="theme-icon" />
-      </button>
     </nav>
+
+    <button onClick={toggleTheme} className="theme-btn">
+    { (theme === 'light') ? <DarkIcon/> : <LightIcon/> }
+    </button>
 
   </section>
   )
