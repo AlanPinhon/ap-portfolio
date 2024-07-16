@@ -1,3 +1,5 @@
+@import './assets/fonts/fonts.css';
+
 :root {
   /* Main Colors */
   --main-black: #000;
@@ -19,27 +21,22 @@
   --menu-background: var(--soft-gray);
   --secondary-text-color: var(--light-gray);
   --shadow: 3px 3px 10px rgba(0, 0, 0, .03);
-
   --contact-background-color: var(--main-black);
   --contact-text-color: var(--light-gray);
-  /* Contact Button */
-  --hover-background-btn: #fb6b6b;
-  --radius-contact-button: 10px;
-  --text-button-color: var(--light-gray);
+
   /* Font Props */
-  --fira-font: 'Fira Sans', sans-serif;;
-  --fira-thin: 100;
-  --fira-extra-light: 200;
-  --fira-light: 300;
-  --fira-regular: 400;
-  --fira-medium: 500;
-  --fira-semi-bold: 600;
-  --fira-bold: 700;
-  --fira-extrabold: 800;
-  --fira-black: 900;
+  --cheddar-font: 'Cheddar Gothic';
+  --outfit-font: 'Outfit';
+  --cheddar-regular: normal;
+  --cheddar-italic: italic;
+  --outfit-light: 300;
+  --outfit-regular: 400;
+  --outfit-medium: 500;
+  --outfit-semi-bold: 600;
+  --outfit-bold: 700;
   --title-size: 7rem;
   --subtitle-size: 3rem;
-  --hero-text-size: 1.25rem;
+  --hero-text-size: 1.5rem;
   --paragraph-size: 1rem;
   --links-size: 1rem;
 }
@@ -58,7 +55,7 @@
 }
 
 *{
-  font-family: var(--fira-font);
+  font-family: var(--outfit-font);
   margin: 0;
   padding: 0;
   box-sizing: border-box;

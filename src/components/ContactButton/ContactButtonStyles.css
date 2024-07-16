@@ -1,18 +1,17 @@
 .contact-btn {
-  width: 8rem;
-  height: 2.8rem;
-  line-height: 3rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
+  font-family: var(--cheddar-font);
   font-size: var(--hero-text-size);
-  font-weight: var(--fira-extrabold);
-  border-radius: var(--radius-contact-button);
+  font-weight: var(--cheddar-regular);
+  border-radius: 4px;
   background-color: var(--rock-red);
-  color: var(--text-button-color);
+  color: var(--main-white);
   cursor: pointer;
   transition: .2s ease-in-out;
 
   &:hover {
-    background-color: var(--hover-background-btn);
+    background-color: #FF8C8C;
   }
 }
