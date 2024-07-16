@@ -11,12 +11,12 @@ import { ThemeProvider } from "./context/ThemeProvider"
 export const App = () => (
   <ThemeProvider>
     <Navbar/>
-    <Hero/>
-    <AboutMe/>
-    <Experience/>
-    <Skills/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
+    {/* <Hero/> */}
+    {/* <AboutMe/> */}
+    {/* <Experience/> */}
+    {/* <Skills/> */}
+    {/* <Projects/> */}
+    {/* <Contact/> */}
+    {/* <Footer/> */}
   </ThemeProvider>
 )
