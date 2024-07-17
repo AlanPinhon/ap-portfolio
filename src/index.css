@@ -1,64 +1,63 @@
+@import './assets/fonts/fonts.css';
+
 :root {
   /* Main Colors */
   --main-black: #000;
   --main-white: #fff;
   --rock-red: #ff2d2d;
-  --soft-gray: #eee;
+  --soft-gray: #e4e4e4;
   --dark-night: #0e0e10;
   --light-gray: #ddd;
   --dark-gray: #404040;
 
   /* Gradients */
-  --gradient-header: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(255, 255, 255) 0%, rgb(228, 228, 228) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   
   /* Background & Elements Colors */
   --main-background-color: var(--soft-gray);
-  --back-btn-theme: var(--dark-night);
+  --back-btn-theme: var(--soft-gray);
+  --hover-btn-theme: var(--dark-night);
   --main-text-color: var(--main-black);
   --menu-background: var(--soft-gray);
   --secondary-text-color: var(--light-gray);
   --shadow: 3px 3px 10px rgba(0, 0, 0, .03);
-
   --contact-background-color: var(--main-black);
   --contact-text-color: var(--light-gray);
-  /* Contact Button */
-  --hover-background-btn: #fb6b6b;
-  --radius-contact-button: 10px;
-  --text-button-color: var(--light-gray);
+
   /* Font Props */
-  --fira-font: 'Fira Sans', sans-serif;;
-  --fira-thin: 100;
-  --fira-extra-light: 200;
-  --fira-light: 300;
-  --fira-regular: 400;
-  --fira-medium: 500;
-  --fira-semi-bold: 600;
-  --fira-bold: 700;
-  --fira-extrabold: 800;
-  --fira-black: 900;
-  --title-size: 3rem;
-  --subtitle-size: 1.5rem;
-  --hero-text-size: 1.2rem;
+  --cheddar-font: 'Cheddar Gothic';
+  --outfit-font: 'Outfit';
+  --cheddar-regular: normal;
+  --cheddar-italic: italic;
+  --outfit-light: 300;
+  --outfit-regular: 400;
+  --outfit-medium: 500;
+  --outfit-semi-bold: 600;
+  --outfit-bold: 700;
+  --title-size: 7rem;
+  --subtitle-size: 2rem;
+  --hero-text-size: 1.5rem;
   --paragraph-size: 1rem;
-  --links-size: .9rem;
+  --links-size: 1rem;
 }
 
 [data-theme="dark"] {
   --main-background-color: var(--dark-night);
-  --gradient-header: radial-gradient(50% 50% at 50% 50%, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   --shadow: 3px 3px 10px rgba(255, 255, 255, .10);
   --menu-background: var(--light-gray);
-  --back-btn-theme: var(--light-gray);
+  --back-btn-theme: var(--dark-night);
+  --hover-btn-theme: var(--soft-gray);
   --contact-background-color: var(--light-gray);
   --contact-text-color: var(--dark-night);
-  --main-text-color: var(--light-gray);
+  --main-text-color: var(--main-white);
   --secondary-text-color: var(--dark-night);
 }
 
 *{
-  font-family: var(--fira-font);
+  font-family: var(--outfit-font);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -119,4 +118,11 @@ body{
       color: var(--rock-red);
     }
   }
+}
+
+.back-gradient {
+  width: 100vw;
+  height: 700px;
+  position: absolute;
+  background: var(--gradient-header);
 }
