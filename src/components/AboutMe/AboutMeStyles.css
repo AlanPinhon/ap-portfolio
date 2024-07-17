@@ -26,8 +26,9 @@
   flex-direction: column;
   gap: 2rem;
 
-  & .subtitle-section {
-    width: 75%;
+  & .about-me-text {
+    font-size: var(--about-me-size);
+    font-weight: var(--outfit-light);
   }
 
 }

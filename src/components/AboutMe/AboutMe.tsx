@@ -1,6 +1,7 @@
 import AlanPhoto from '../../assets/img/ap-photos/about-me-photo.webp';
 import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
 import { ContactButton } from '../ContactButton/ContactButton';
+import CV from '../../assets/cv/alan-pinon-cv-2024.pdf';
 import './AboutMeStyles.css';
 
 export const AboutMe = () => (
@@ -25,7 +26,7 @@ export const AboutMe = () => (
         Photoshop,</strong> trabajo para construir experiencias digitales cautivadoras.
       </p>
       <SocialMediaLinks/>
-      <ContactButton className="contact-btn" href='#' download='Alan_Piñón_CV.pdf'>Descargar CV</ContactButton>
+      <ContactButton className="contact-btn" href={CV} download='Alan Piñón CV.pdf'>Descargar CV</ContactButton>
     </div>
   </section>
 )
