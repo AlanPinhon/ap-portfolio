@@ -2,8 +2,6 @@ import { useContext, useEffect, useState } from 'react';
 import LightLogo from '../../assets/img/ap-logos/logo-ap-1.svg';
 import DarkLogo from '../../assets/img/ap-logos/logo-ap-2.svg';
 import {DarkIcon, LightIcon} from '../../assets/icons';
-import MenuIcon from '../../assets/img/icon-hamburger.svg';
-import CloseIcon from '../../assets/img/icon-close.svg';
 import { ThemeContext } from '../../context/ThemeContext';
 import './NavbarStyles.css'
 
@@ -45,7 +43,7 @@ export const Navbar = () => {
 
     <img className="nav-ap-logo" src={(theme === 'light') ? LightLogo : DarkLogo }  alt="ap-logo"/>
     <button onClick={toggleMenu} className={`menu-btn ${isOpen ? 'fixed' : ''}`}>
-      <img className={`menu-icon ${isOpen ? 'rotate' : ''}`} src={isOpen ? CloseIcon : MenuIcon}  alt="menu_icon"/>
+      {/* <img className={`menu-icon ${isOpen ? 'rotate' : ''}`} src={isOpen ? CloseIcon : MenuIcon}  alt="menu_icon"/> */}
     </button>
     
     <nav className={`header-nav ${isOpen ? 'show' : ''}`}>

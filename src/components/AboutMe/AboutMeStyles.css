@@ -2,59 +2,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 5rem;
+  padding: 3rem 0;
 }
 
-.about-me-img-container {
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1rem;
+.about-me-img {
+  width: 21.5rem;
+  height: 30.5rem;
+  background: var(--photo-gradient);
+  border-radius: 2rem;
+  overflow: hidden;
 
-  & .about-me-img {
-    width: 11rem;
+  & img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
 
-    & img {
-      width: 100%;
-      border-radius: 50%;
-      object-fit: fill;
-      object-position: center center;
-      box-shadow: var(--shadow);
-      border: .2rem solid var(--rock-red);
-    }
-  }
-}
-
-.about-me-text-container {
-  margin: 1.5rem 0;
-  padding: .85rem 1.5rem;
-  border-radius: 1rem;
-  background-color: var(--background-elements);
-  box-shadow: var(--shadow);
-
-
-  & .about-me-name {
-    margin-bottom: 1rem;
-    text-align: center;
-    color: var(--rock-red);
-    font-size: var(--hero-text-size);
-    font-weight: var(--fira-extrabold);
   }
 }
 
 .about-me-info-container {
-  width: 65%;
+  width: 33.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   & .subtitle-section {
     width: 75%;
   }
 
-  & .about-me-text {
-    margin: 1rem 0;
-    font-size: var(--paragraph-size);
-    font-weight: var(--fira-regular);
-  }
 }
 
 @media screen and (max-width: 930px) {

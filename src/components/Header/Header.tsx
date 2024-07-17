@@ -13,7 +13,7 @@ export const Header = () => {
             <strong>Diseñador gráfico &</strong> Desarrollador Web Front-End Jr
           </p>
         </div>
-      <ContactButton/>
+      <ContactButton className="contact-btn" href="mailto:alanpinon32@gmail.com">Contáctame</ContactButton>
       </div>
       <div className="welcome-photo-container">
         <img src={AlanPhoto} alt="Foto de Alan Piñón" />
