@@ -119,5 +119,7 @@ body{
 .back-gradient {
   width: 100vw;
   height: 700px;
+  position: absolute;
+  z-index: -1000;
   background: var(--gradient-header);
 }
