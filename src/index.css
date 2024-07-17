@@ -5,18 +5,19 @@
   --main-black: #000;
   --main-white: #fff;
   --rock-red: #ff2d2d;
-  --soft-gray: #eee;
+  --soft-gray: #e4e4e4;
   --dark-night: #0e0e10;
   --light-gray: #ddd;
   --dark-gray: #404040;
 
   /* Gradients */
-  --gradient-header: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(255, 255, 255) 0%, rgb(228, 228, 228) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   
   /* Background & Elements Colors */
   --main-background-color: var(--soft-gray);
-  --back-btn-theme: var(--dark-night);
+  --back-btn-theme: var(--soft-gray);
+  --hover-btn-theme: var(--dark-night);
   --main-text-color: var(--main-black);
   --menu-background: var(--soft-gray);
   --secondary-text-color: var(--light-gray);
@@ -43,14 +44,15 @@
 
 [data-theme="dark"] {
   --main-background-color: var(--dark-night);
-  --gradient-header: radial-gradient(50% 50% at 50% 50%, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   --shadow: 3px 3px 10px rgba(255, 255, 255, .10);
   --menu-background: var(--light-gray);
-  --back-btn-theme: var(--light-gray);
+  --back-btn-theme: var(--dark-night);
+  --hover-btn-theme: var(--soft-gray);
   --contact-background-color: var(--light-gray);
   --contact-text-color: var(--dark-night);
-  --main-text-color: var(--light-gray);
+  --main-text-color: var(--main-white);
   --secondary-text-color: var(--dark-night);
 }
 
@@ -116,4 +118,11 @@ body{
       color: var(--rock-red);
     }
   }
+}
+
+.back-gradient {
+  width: 100vw;
+  height: 700px;
+  position: absolute;
+  background: var(--gradient-header);
 }

@@ -23,7 +23,7 @@
   height: 3rem;
   border: none;
   border-radius: 50%;
-  background-color: var(--background-elements);
+  background-color: var(--back-btn-theme);
   box-shadow: var(--shadow);
   transition: .15s ease-in-out;
   cursor: pointer;
@@ -39,7 +39,7 @@
   }
 
   &:hover {
-    background-color: var(--back-btn-theme);
+    background-color: var(--hover-btn-theme);
 
     & path { 
       stroke: var(--secondary-text-color);

@@ -10,8 +10,10 @@ import { ThemeProvider } from "./context/ThemeProvider"
 
 export const App = () => (
   <ThemeProvider>
-    <Navbar/>
-    <Header/>
+    <div className="back-gradient">
+      <Navbar/>
+      <Header/>
+    </div>
     {/* <AboutMe/> */}
     {/* <Experience/> */}
     {/* <Skills/> */}
