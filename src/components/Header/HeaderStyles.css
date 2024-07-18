@@ -27,8 +27,8 @@
     & .name-text {
       font-family: var( --cheddar-font);
       color: var(--rock-red);
-      font-size: var(--title-size);
-      line-height: var(--title-size);
+      font-size: 7rem;
+      line-height: 7rem;
       font-weight: var(--cheddar-regular);
       
       & .last-name {

@@ -1,5 +1,19 @@
+import React from 'react';
 import './ContactButtonStyles.css';
 
-export const ContactButton = () => (
-  <a className="contact-btn" href="mailto:alanpinon32@gmail.com"> Contáctame </a>
+type ButtonProps = {
+  children: React.ReactNode;
+  className: string;
+  download?: string;
+  href?: string;
+}
+
+export const ContactButton = ({children, className, href, download}:ButtonProps) => (
+  <a
+    className={className}
+    href={href}
+    download={download}
+  >
+      {children}
+  </a>
 )

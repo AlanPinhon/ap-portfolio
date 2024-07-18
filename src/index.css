@@ -35,17 +35,17 @@
   --outfit-medium: 500;
   --outfit-semi-bold: 600;
   --outfit-bold: 700;
-  --title-size: 7rem;
+  --title-size: 3rem;
   --subtitle-size: 2rem;
   --hero-text-size: 1.5rem;
-  --paragraph-size: 1rem;
+  --about-me-size: 1.1rem;
   --links-size: 1rem;
 }
 
 [data-theme="dark"] {
   --main-background-color: var(--dark-night);
   --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
-  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
+  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(201, 201, 201) 100%);
   --shadow: 3px 3px 10px rgba(255, 255, 255, .10);
   --menu-background: var(--light-gray);
   --back-btn-theme: var(--dark-night);
@@ -76,15 +76,11 @@ body{
 }
 
 .title-section {
-  width: 7rem;
-  padding: .75rem;
-  border-radius: 1rem;
-  text-align: center;
-  font-size: var(--paragraph-size);
-  font-weight: var(--fira-semi-bold);
-  background-color: var(--background-elements);
-  color: var(--main-text-color);
-  box-shadow: var(--shadow);
+  font-size: var(--title-size);
+  line-height: var(--title-size);
+  font-family: var(--cheddar-font);
+  font-weight: var(--cheddar-regular);
+  color: var(--rock-red);
 }
 
 .subtitle-section {
@@ -124,5 +120,6 @@ body{
   width: 100vw;
   height: 700px;
   position: absolute;
+  z-index: -1000;
   background: var(--gradient-header);
 }
