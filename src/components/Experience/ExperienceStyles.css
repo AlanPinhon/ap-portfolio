@@ -2,21 +2,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem 5rem;
+  padding: 3rem 0;
+  gap: 3rem;
 }
 
-.experience-timeline-container {
-  width: 30rem;
-  margin: 2rem 0 1rem;
+.experience-cards-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.experience-date {
-  width: 100%;
+.experience-info {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
+
+.academy-container,
+.work-container{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.experience-title,
+.work-year {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: var(--outfit-medium);
+}
+
+.work-year{
+  color: var(--rock-red);
+}
+
+.container-source {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-paragraph {
+  line-height: 1rem;
+  font-weight: var(--outfit-light);
+  color: var(--secondary-text-color);
+}
+
+.academy-year {
+  color: var(--main-white);
+  font-weight: var(--outfit-regular);
+}
+
 
 @media screen and (max-width: 650px) {
 
