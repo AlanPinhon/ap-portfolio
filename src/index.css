@@ -11,11 +11,11 @@
   --dark-gray: #404040;
 
   /* Gradients */
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(255, 255, 255) 0%, rgb(228, 228, 228) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(228, 228, 228) 0%, rgb(255, 255, 255) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   
   /* Background & Elements Colors */
-  --main-background-color: var(--soft-gray);
+  --main-background-color: var(--main-white);
   --back-btn-theme: var(--soft-gray);
   --hover-btn-theme: var(--dark-night);
   --main-text-color: var(--main-black);
