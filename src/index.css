@@ -11,17 +11,18 @@
   --dark-gray: #404040;
 
   /* Gradients */
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(255, 255, 255) 0%, rgb(228, 228, 228) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(228, 228, 228) 0%, rgb(255, 255, 255) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   
   /* Background & Elements Colors */
-  --main-background-color: var(--soft-gray);
+  --main-background-color: var(--main-white);
   --back-btn-theme: var(--soft-gray);
   --hover-btn-theme: var(--dark-night);
   --main-text-color: var(--main-black);
   --menu-background: var(--soft-gray);
-  --secondary-text-color: var(--light-gray);
-  --shadow: 3px 3px 10px rgba(0, 0, 0, .03);
+  --back-experience-card: #F0F0F0;
+  --border-color: var(--light-gray);
+  --secondary-text-color: var(--dark-gray);
   --contact-background-color: var(--main-black);
   --contact-text-color: var(--light-gray);
 
@@ -46,14 +47,15 @@
   --main-background-color: var(--dark-night);
   --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(201, 201, 201) 100%);
-  --shadow: 3px 3px 10px rgba(255, 255, 255, .10);
   --menu-background: var(--light-gray);
   --back-btn-theme: var(--dark-night);
   --hover-btn-theme: var(--soft-gray);
+  --back-experience-card: #18181B;
+  --border-color: var(--dark-gray);
+  --secondary-text-color: var(--light-gray);
   --contact-background-color: var(--light-gray);
   --contact-text-color: var(--dark-night);
   --main-text-color: var(--main-white);
-  --secondary-text-color: var(--dark-night);
 }
 
 *{
@@ -84,9 +86,8 @@ body{
 }
 
 .subtitle-section {
-  margin: 1.5rem 0;
   font-size: var(--subtitle-size);
-  font-weight: var(--fira-semi-bold);
+  font-weight: var(--outfit-medium);
   color: var(--rock-red);
 }
 
@@ -94,25 +95,16 @@ body{
   text-align: center;
 }
 
-.link-container {
-  display: flex;
-  align-items: center;
+a {
+  font-size: var(--links-size);
+  line-height: var(--links-size);
+  font-weight: var(--outfit-regular);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: .15s ease-in-out;
 
-  & .link-icon {
-    width: 1.25rem;
-    margin-right: .5rem;
-    filter: var(--icon-color);
-  }
-
-  & a {
-    font-size: var(--links-size);
-    text-decoration: none;
-    color: var(--text-color);
-    transition: .15s ease-in-out;
-
-    &:hover {
-      color: var(--rock-red);
-    }
+  &:hover {
+    color: var(--rock-red);
   }
 }
 

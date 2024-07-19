@@ -24,7 +24,6 @@
   border: none;
   border-radius: 50%;
   background-color: var(--back-btn-theme);
-  box-shadow: var(--shadow);
   transition: .15s ease-in-out;
   cursor: pointer;
 
@@ -42,7 +41,7 @@
     background-color: var(--hover-btn-theme);
 
     & path { 
-      stroke: var(--secondary-text-color);
+      stroke: var(--border-color);
     }
   }
 

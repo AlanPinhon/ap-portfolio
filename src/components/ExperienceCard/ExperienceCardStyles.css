@@ -1,0 +1,30 @@
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  width: 29.25rem;
+  gap: 3rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--back-experience-card);
+}
+
+.experience-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.background-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rock-red);
+  border-radius: 50%; 
+}
+
+.experience-icon {
+  fill: var(--main-white);
+}

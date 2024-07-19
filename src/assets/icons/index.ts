@@ -3,3 +3,5 @@ export * from './LightIcon';
 export * from './BehanceIcon';
 export * from './LinkedinIcon';
 export * from './GithubIcon';
+export * from './EducationIcon';
+export * from './WorkIcon';
