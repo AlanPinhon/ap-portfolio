@@ -5,7 +5,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 .img-container {
@@ -32,6 +31,12 @@
   & .project-title{
     font-size: var(--subtitle-size);
     font-weight: var(--outfit-semi-bold);
+  }
+
+  & .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
   }
 }
 
