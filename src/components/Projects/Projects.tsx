@@ -7,6 +7,7 @@ import APBrand from '../../assets/img/project-img/ap-brand-cover.jpg';
 import ShortlyCover from '../../assets/img/project-img/shortly-cover.jpg';
 import AdviceCover from '../../assets/img/project-img/advice-cover.jpg';
 import { tagList } from './tagList';
+import { ButtonLink } from '../ButtonLink/ButtonLink';
 import './ProjectsStyles.css'
 
 export const Projects = () => (
@@ -24,7 +25,10 @@ export const Projects = () => (
         estilos y pautas de diseño para facilitar el desarrollo de la aplicación
         Deep Feels.'
         tags={[tagList.react, tagList.ts, tagList.styled, tagList.webpack, tagList.storybook, tagList.jest]}
-      />
+      >
+        <ButtonLink href='#'>Código</ButtonLink>
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
       <DevProjectCard
         img={DeepFeelsFigma}
@@ -34,7 +38,9 @@ export const Projects = () => (
         destinado a proporcionar un conjunto coherente de componentes reutilizables,
         estilos y pautas de diseño para facilitar el desarrollo de la aplicación Deep Feels.'
         tags={[tagList.figma]}
-      />
+      >
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
       <DevProjectCard
         img={DeepFeelsBrand}
@@ -45,7 +51,9 @@ export const Projects = () => (
         y mejorar su estado de ánimo, ofreciendo una gran variedad de sonidos
         relajantes.'
         tags={[tagList.ai, tagList.ps]}
-      />
+      >
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
       <DevProjectCard
         img={RestCountries}
@@ -55,7 +63,10 @@ export const Projects = () => (
         integrada con la API de REST Countries, Cambia el tema de claro a oscuro de
         forma manual y tomando la configuración del dispositivo del usuario.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.reactRouter, tagList.msw]}
-      />
+      >
+        <ButtonLink href='#'>Código</ButtonLink>
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
       <DevProjectCard
         img={APBrand}
@@ -63,7 +74,9 @@ export const Projects = () => (
         title='Alan Pinhon Personal Identity'
         description='Proyecto de la identidad visual de mi marca personal Alan Pinhon.'
         tags={[tagList.ai, tagList.ps]}
-      />
+      >
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
       <DevProjectCard
         img={ShortlyCover}
@@ -72,7 +85,10 @@ export const Projects = () => (
         description='Proyecto para crear URL acortadas. Está integrado con la API Bitly.
         Los enlaces persisten al recargar la página y se copian en el clipboard con un solo clic.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.msw]}
-      />
+      >
+        <ButtonLink href='#'>Código</ButtonLink>
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
       <DevProjectCard
         img={AdviceCover}
@@ -82,7 +98,10 @@ export const Projects = () => (
         Advice Slip API y genera un nuevo consejo al dar clic en el ícono
         Muestra un mensaje de error si falla la conexión.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.msw]}
-      />
+      >
+        <ButtonLink href='#'>Código</ButtonLink>
+        <ButtonLink href='#'>Proyecto</ButtonLink>
+      </DevProjectCard>
 
     </div>
   </section>

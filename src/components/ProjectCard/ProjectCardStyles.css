@@ -38,6 +38,15 @@
     flex-wrap: wrap;
     gap: .5rem;
   }
+
+  & .project-description {
+    font-weight: var(--outfit-light);
+  }
+
+  & .links-container {
+    display: flex;
+    gap: .5rem;
+  }
 }
 
 

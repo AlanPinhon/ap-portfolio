@@ -1,0 +1,13 @@
+.btn-link {
+  color: var(--rock-red);
+  padding: .5rem 1rem;
+  border: 1px solid var(--rock-red);
+  border-radius: .5rem;
+  transition: all .15s ease-in-out;
+
+  &:hover {
+    color: var(--main-white);
+    background-color: var(--rock-red);
+  }
+
+}
