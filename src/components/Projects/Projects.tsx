@@ -1,14 +1,14 @@
 import { DevProjectCard } from '../ProjectCard/ProjectCard';
-import DeepFeelsUI from '../../assets/img/project-img/df-ui-code-cover.jpg';
-import DeepFeelsFigma from '../../assets/img/project-img/df-ui-figma-cover.jpg';
+import DeepFeelsUI from '../../assets/img/project-img/deep-feels-ui-cover.jpg';
 import DeepFeelsBrand from '../../assets/img/project-img/df-brand-cover.jpg';
 import RestCountries from '../../assets/img/project-img/countries-cover.jpg';
 import APBrand from '../../assets/img/project-img/ap-brand-cover.jpg';
 import ShortlyCover from '../../assets/img/project-img/shortly-cover.jpg';
 import AdviceCover from '../../assets/img/project-img/advice-cover.jpg';
-import { tagList } from './tagList';
 import { ButtonLink } from '../ButtonLink/ButtonLink';
-import './ProjectsStyles.css'
+import { Icon } from '../../assets/icons/Icon';
+import { tagList } from './tagList';
+import './ProjectsStyles.css';
 
 export const Projects = () => (
   <section className="projects-container container">
@@ -18,28 +18,20 @@ export const Projects = () => (
 
       <DevProjectCard
         img={DeepFeelsUI}
-        altImg='Deep Feels UI Code'
-        title='Deep Feels UI'
-        description='Sistema de diseño desarrollado en React & TypeScript
-        que proporciona un conjunto coherente de componentes reutilizables,
-        estilos y pautas de diseño para facilitar el desarrollo de la aplicación
-        Deep Feels.'
-        tags={[tagList.react, tagList.ts, tagList.styled, tagList.webpack, tagList.storybook, tagList.jest]}
-      >
-        <ButtonLink href='#'>Código</ButtonLink>
-        <ButtonLink href='#'>Proyecto</ButtonLink>
-      </DevProjectCard>
-
-      <DevProjectCard
-        img={DeepFeelsFigma}
-        altImg='Deep Feels UI Figma'
+        altImg='Deep Feels UI'
         title='Deep Feels System Design'
-        description='Proyecto de un sistema de diseño desarrollado en Figma,
-        destinado a proporcionar un conjunto coherente de componentes reutilizables,
-        estilos y pautas de diseño para facilitar el desarrollo de la aplicación Deep Feels.'
-        tags={[tagList.figma]}
+        description='Sistema de diseño desarrollado en Figma,
+        React & TypeScript que proporciona un conjunto coherente de
+        componentes reutilizables, estilos y pautas de diseño para
+        facilitar el desarrollo de la aplicación Deep Feels.'
+        tags={[tagList.react, tagList.ts, tagList.styled, tagList.webpack, tagList.storybook, tagList.jest, tagList.figma]}
       >
-        <ButtonLink href='#'>Proyecto</ButtonLink>
+        <ButtonLink href='https://github.com/AlanPinhon/deep-feels-ui'>
+          <Icon name='GithubIcon'/>
+          Código</ButtonLink>
+        <ButtonLink href='https://www.figma.com/design/chUmyBEs9Ig57VKok41QYo/Deep-Feels-UI?m=auto&t=3MAPI6YxWk5tg8cT-6'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
       </DevProjectCard>
 
       <DevProjectCard
@@ -52,7 +44,9 @@ export const Projects = () => (
         relajantes.'
         tags={[tagList.ai, tagList.ps]}
       >
-        <ButtonLink href='#'>Proyecto</ButtonLink>
+        <ButtonLink href='https://www.behance.net/gallery/201145373/Deep-Feels-Relaxing-App-Brand-Visual-Identity'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
       </DevProjectCard>
 
       <DevProjectCard
@@ -64,8 +58,12 @@ export const Projects = () => (
         forma manual y tomando la configuración del dispositivo del usuario.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.reactRouter, tagList.msw]}
       >
-        <ButtonLink href='#'>Código</ButtonLink>
-        <ButtonLink href='#'>Proyecto</ButtonLink>
+        <ButtonLink href='https://github.com/AlanPinhon/rest-countries-api-ts'>
+          <Icon name='GithubIcon'/>
+          Código</ButtonLink>
+        <ButtonLink href='https://countries-app-fm-practice.netlify.app/home'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
       </DevProjectCard>
 
       <DevProjectCard
@@ -75,7 +73,9 @@ export const Projects = () => (
         description='Proyecto de la identidad visual de mi marca personal Alan Pinhon.'
         tags={[tagList.ai, tagList.ps]}
       >
-        <ButtonLink href='#'>Proyecto</ButtonLink>
+        <ButtonLink href='https://www.behance.net/gallery/170906851/Alan-Pinhon-Personal-Identity'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
       </DevProjectCard>
 
       <DevProjectCard
@@ -86,8 +86,12 @@ export const Projects = () => (
         Los enlaces persisten al recargar la página y se copian en el clipboard con un solo clic.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.msw]}
       >
-        <ButtonLink href='#'>Código</ButtonLink>
-        <ButtonLink href='#'>Proyecto</ButtonLink>
+        <ButtonLink href='https://github.com/AlanPinhon/url-shortening-page-ts'>
+          <Icon name='GithubIcon'/>
+          Código</ButtonLink>
+        <ButtonLink href='https://shortly-landing-page-app-fm.netlify.app'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
       </DevProjectCard>
 
       <DevProjectCard
@@ -99,8 +103,12 @@ export const Projects = () => (
         Muestra un mensaje de error si falla la conexión.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.msw]}
       >
-        <ButtonLink href='#'>Código</ButtonLink>
-        <ButtonLink href='#'>Proyecto</ButtonLink>
+        <ButtonLink href='https://github.com/AlanPinhon/advice-generator-app-ts'>
+          <Icon name='GithubIcon'/>
+          Código</ButtonLink>
+        <ButtonLink href='https://advice-generator-app-practice-fm.netlify.app'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
       </DevProjectCard>
 
     </div>

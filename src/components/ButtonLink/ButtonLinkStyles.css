@@ -1,13 +1,30 @@
 .btn-link {
+  font-size: var(--link-size);
+  line-height: var(--link-size);
   color: var(--rock-red);
   padding: .5rem 1rem;
   border: 1px solid var(--rock-red);
   border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
   transition: all .15s ease-in-out;
+  
+  & .link-icon {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--rock-red);
+    transition: all .15s ease-in-out;
+  }
 
   &:hover {
     color: var(--main-white);
     background-color: var(--rock-red);
+
+    & .link-icon {
+      fill: var(--main-white);
+    }
   }
 
 }

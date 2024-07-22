@@ -7,7 +7,7 @@ type BtnLinkProps = {
 }
 
 export const ButtonLink = ({href, children}:BtnLinkProps) => (
-  <a className='btn-link' href={href}>
+  <a className='btn-link' href={href} target='_blank'>
       
     {children}
   </a>

@@ -5,3 +5,6 @@ export * from './LinkedinIcon';
 export * from './GithubIcon';
 export * from './EducationIcon';
 export * from './WorkIcon';
+export * from './LinkIcon';
+export * from './CloseIcon';
+export * from './HamburgerIcon';
