@@ -1,32 +1,38 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
-  color: var(--main-text-color);
+  padding: 3rem 0;
 }
 
 .contact-info {
   width: 100%;
-  border-radius: 1rem;
-  padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-image: var(--second-background-color);
+  justify-content: space-between;
 
-  & .contact-me-text {
+  & .contact-img {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid var(--rock-red);
+    border-radius: 50%;
+  }
+
+  & .contact-container {
     display: flex;
     flex-direction: column;
 
     & .contact-me {
+      font-size: 1.75rem;
+      line-height: 1.75rem;
+      font-weight: var(--outfit-bold);
       margin-bottom: 1rem;
       color: var(--rock-red);
-
-      font-weight: var(--fira-semi-bold);
-      font-size: var(--subtitle-size);
     }
     
     & .contact-me-info {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      font-weight: var(--outfit-light);
       color: var(--secondary-text-color);
     }
   }
