@@ -1,66 +1,81 @@
-const react = {
+import { TagProps } from "../Tag/Tag"
+
+const react: TagProps = {
   color: '#005AC3',
-  tagName: 'React'
+  tagName: 'React',
+  icon: 'ReactIcon'
 }
 
-const styled = {
+const styled: TagProps = {
   color: '#DE7095',
-  tagName: 'Styled Components'
+  tagName: 'Styled Components',
+  icon: 'StyledComponentsIcon'
 }
 
-const ts = {
+const ts: TagProps = {
   color: '#278BFF',
-  tagName: 'TypeScript'
+  tagName: 'TypeScript',
+  icon: 'TypeScriptIcon'
 }
 
-const vite = {
+const vite: TagProps = {
   color: '#BD34FE',
-  tagName: 'Vite'
+  tagName: 'Vite',
+  icon: 'ViteIcon'
 }
 
-const reactRouter = {
+const reactRouter: TagProps = {
   color: '#D0021B',
-  tagName: 'React Router'
+  tagName: 'React Router',
+  icon: 'ReactRouterIcon'
 }
 
-const msw = {
+const msw: TagProps = {
   color: '#ED7344',
-  tagName: 'Mock Service Worker'
+  tagName: 'Mock Service Worker',
+  icon: 'MSWIcon'
 }
 
-const vitest = {
+const vitest: TagProps = {
   color: '#729B1B',
-  tagName: 'Vitest'
+  tagName: 'Vitest',
+  icon: 'VitestIcon'
 }
 
-const webpack = {
+const webpack: TagProps = {
   color: '#1C78C0',
-  tagName: 'Webpack'
+  tagName: 'Webpack',
+  icon: 'WebpackIcon'
 }
 
-const storybook = {
+const storybook: TagProps = {
   color: '#FF4785',
-  tagName: 'Storybook'
+  tagName: 'Storybook',
+  icon: 'StorybookIcon'
 }
 
-const jest = {
+const jest: TagProps = {
   color: '#70211D',
-  tagName: 'Jest'
+  tagName: 'Jest',
+  icon: 'JestIcon'
 }
 
-const figma = {
+const figma: TagProps = {
   color: '#EA4E4E',
-  tagName: 'Figma'
+  tagName: 'Figma',
+  icon: 'FigmaIcon'
 }
 
-const ai = {
+const ai: TagProps = {
   color: '#F09210',
-  tagName: 'Illustrator'
+  tagName: 'Illustrator',
+  icon: 'IllustratorIcon'
 }
 
-const ps = {
+const ps: TagProps = {
   color: '#399DE5',
-  tagName: 'Photoshop'
+  tagName: 'Photoshop',
+  icon: 'PhotoshopIcon'
 }
 
 export const tagList = {

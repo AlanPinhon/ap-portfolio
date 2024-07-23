@@ -1,3 +1,4 @@
+export * from './ArrowUpIcon';
 export * from './BehanceIcon';
 export * from './CloseIcon';
 export * from './DarkIcon';
