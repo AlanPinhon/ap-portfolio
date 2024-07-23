@@ -1,14 +1,13 @@
-import { EducationIcon, WorkIcon } from '../../assets/icons';
 import { ExperienceCard } from '../ExperienceCard/ExperienceCard';
+import { Icon } from '../../assets/icons/Icon';
 import './ExperienceStyles.css';
 
 export const Experience = () => (
-  <section className="experience-container container">
-    <h2 className="title-section" id="projects">Experiencia</h2>
+  <section id="experience" className="experience-container container">
+    <h2 className="title-section">Experiencia</h2>
     
     <div className="experience-cards-container">
-
-      <ExperienceCard icon={<EducationIcon/>} subtitle='Académica'>
+      <ExperienceCard icon={<Icon name='EducationIcon'/>} subtitle='Académica'>
         <div className="experience-info">
 
           <div className="academy-container">
@@ -54,7 +53,7 @@ export const Experience = () => (
         </div>
       </ExperienceCard>
 
-      <ExperienceCard icon={<WorkIcon/>} subtitle='Laboral'>
+      <ExperienceCard icon={<Icon name='WorkIcon'/>} subtitle='Laboral'>
         <div className="experience-info">
 
           <div className="work-container">

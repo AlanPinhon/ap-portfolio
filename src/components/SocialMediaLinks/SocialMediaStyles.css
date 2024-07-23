@@ -11,6 +11,7 @@
       width: 1.5rem;
       height: 1.5rem;
       fill: var(--main-text-color);
+      transition: all .1s ease-in-out;
   
       &:hover {
         fill: var(--rock-red);

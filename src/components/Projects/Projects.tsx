@@ -11,8 +11,8 @@ import { tagList } from './tagList';
 import './ProjectsStyles.css';
 
 export const Projects = () => (
-  <section className="projects-container container">
-    <h2 className="title-section" id="projects">Proyectos</h2>
+  <section id="projects" className="projects-container container">
+    <h2 className="title-section">Proyectos</h2>
 
     <div className="project-cards-container">
 

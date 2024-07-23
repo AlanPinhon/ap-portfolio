@@ -11,7 +11,7 @@
   background-color: var(--rock-red);
   color: var(--main-white);
   cursor: pointer;
-  transition: .2s ease-in-out;
+  transition: .15s ease-in-out;
 
   &:hover {
     background-color: #FF8C8C;

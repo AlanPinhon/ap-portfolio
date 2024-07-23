@@ -23,8 +23,6 @@
   --back-experience-card: #F0F0F0;
   --border-color: var(--light-gray);
   --secondary-text-color: var(--dark-gray);
-  --contact-background-color: var(--main-black);
-  --contact-text-color: var(--light-gray);
 
   /* Font Props */
   --cheddar-font: 'Cheddar Gothic';
@@ -53,8 +51,6 @@
   --back-experience-card: #18181B;
   --border-color: var(--dark-gray);
   --secondary-text-color: var(--light-gray);
-  --contact-background-color: var(--light-gray);
-  --contact-text-color: var(--dark-night);
   --main-text-color: var(--main-white);
 }
 
@@ -68,8 +64,6 @@
 body{
   color: var(--main-text-color);
   background-color: var(--main-background-color);
-  background-position: top;
-  background-size: cover;
 }
 
 .container {
@@ -91,17 +85,13 @@ body{
   color: var(--rock-red);
 }
 
-.center-text {
-  text-align: center;
-}
-
 a {
   font-size: var(--links-size);
   line-height: var(--links-size);
   font-weight: var(--outfit-regular);
   text-decoration: none;
   color: var(--text-color);
-  transition: .15s ease-in-out;
+  transition: .1s ease-in-out;
 
   &:hover {
     color: var(--rock-red);
@@ -109,7 +99,7 @@ a {
 }
 
 .back-gradient {
-  width: 100vw;
+  width: 100%;
   height: 700px;
   position: absolute;
   z-index: -1000;
