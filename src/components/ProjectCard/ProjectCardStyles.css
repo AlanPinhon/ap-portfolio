@@ -1,0 +1,52 @@
+.project-card {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-img {
+  width: 27.125rem;
+  height: 15rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.separator {
+  height: 65%;
+  border-left: 1px solid var(--border-color);
+}
+
+.project-content {
+  width: 32.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & .project-title{
+    font-size: var(--subtitle-size);
+    font-weight: var(--outfit-semi-bold);
+  }
+
+  & .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+
+  & .project-description {
+    font-weight: var(--outfit-light);
+  }
+
+  & .links-container {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+
+}
