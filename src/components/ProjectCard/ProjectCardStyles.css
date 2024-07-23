@@ -7,14 +7,11 @@
   align-items: center;
 }
 
-.img-container {
+.project-img {
   width: 27.125rem;
   height: 15rem;
-  
-  & img {
-    width: 100%;
-    border-radius: 1rem;
-  }
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
 }
 
 .separator {

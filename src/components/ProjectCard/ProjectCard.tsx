@@ -15,11 +15,9 @@ type ProjectCardProps = {
   children: React.ReactNode;
 }
 
-export const DevProjectCard = ({altImg, description, img, children, title, tags}:ProjectCardProps) => (
+export const ProjectCard = ({altImg, description, img, children, title, tags}:ProjectCardProps) => (
   <section className="project-card">
-    <div className="img-container">
-      <img src={img} alt={altImg} />
-    </div>
+    <img className='project-img' src={img} alt={altImg} />
     <div className="separator"></div>
     <div className="project-content">
       <h4 className="project-title">{title}</h4>

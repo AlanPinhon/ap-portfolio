@@ -1,4 +1,4 @@
-import { DevProjectCard } from '../ProjectCard/ProjectCard';
+import { ProjectCard } from '../ProjectCard/ProjectCard';
 import DeepFeelsUI from '../../assets/img/project-img/deep-feels-ui-cover.jpg';
 import DeepFeelsBrand from '../../assets/img/project-img/df-brand-cover.jpg';
 import RestCountries from '../../assets/img/project-img/countries-cover.jpg';
@@ -16,7 +16,7 @@ export const Projects = () => (
 
     <div className="project-cards-container">
 
-      <DevProjectCard
+      <ProjectCard
         img={DeepFeelsUI}
         altImg='Deep Feels UI'
         title='Deep Feels System Design'
@@ -32,9 +32,9 @@ export const Projects = () => (
         <ButtonLink href='https://www.figma.com/design/chUmyBEs9Ig57VKok41QYo/Deep-Feels-UI?m=auto&t=3MAPI6YxWk5tg8cT-6'>
           <Icon name='LinkIcon'/>
           Proyecto</ButtonLink>
-      </DevProjectCard>
+      </ProjectCard>
 
-      <DevProjectCard
+      <ProjectCard
         img={DeepFeelsBrand}
         altImg='Deep Feels Brand'
         title='Deep Feels Brand & Visual Identity'
@@ -47,9 +47,9 @@ export const Projects = () => (
         <ButtonLink href='https://www.behance.net/gallery/201145373/Deep-Feels-Relaxing-App-Brand-Visual-Identity'>
           <Icon name='LinkIcon'/>
           Proyecto</ButtonLink>
-      </DevProjectCard>
+      </ProjectCard>
 
-      <DevProjectCard
+      <ProjectCard
         img={RestCountries}
         altImg='Rest Countries'
         title='Rest Countries API'
@@ -64,9 +64,9 @@ export const Projects = () => (
         <ButtonLink href='https://countries-app-fm-practice.netlify.app/home'>
           <Icon name='LinkIcon'/>
           Proyecto</ButtonLink>
-      </DevProjectCard>
+      </ProjectCard>
 
-      <DevProjectCard
+      <ProjectCard
         img={APBrand}
         altImg='Alan Piñón Visual Identity'
         title='Alan Pinhon Personal Identity'
@@ -76,9 +76,9 @@ export const Projects = () => (
         <ButtonLink href='https://www.behance.net/gallery/170906851/Alan-Pinhon-Personal-Identity'>
           <Icon name='LinkIcon'/>
           Proyecto</ButtonLink>
-      </DevProjectCard>
+      </ProjectCard>
 
-      <DevProjectCard
+      <ProjectCard
         img={ShortlyCover}
         altImg='Shortly WebSite'
         title='Shortly Landing Page'
@@ -92,9 +92,9 @@ export const Projects = () => (
         <ButtonLink href='https://shortly-landing-page-app-fm.netlify.app'>
           <Icon name='LinkIcon'/>
           Proyecto</ButtonLink>
-      </DevProjectCard>
+      </ProjectCard>
 
-      <DevProjectCard
+      <ProjectCard
         img={AdviceCover}
         altImg='Advice Generator WebSite'
         title='Advice Generator'
@@ -109,7 +109,7 @@ export const Projects = () => (
         <ButtonLink href='https://advice-generator-app-practice-fm.netlify.app'>
           <Icon name='LinkIcon'/>
           Proyecto</ButtonLink>
-      </DevProjectCard>
+      </ProjectCard>
 
     </div>
   </section>

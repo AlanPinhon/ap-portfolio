@@ -1,6 +1,6 @@
 .btn-link {
-  font-size: var(--link-size);
-  line-height: var(--link-size);
+  font-size: .75rem;
+  line-height: .75rem;
   color: var(--rock-red);
   padding: .5rem 1rem;
   border: 1px solid var(--rock-red);
