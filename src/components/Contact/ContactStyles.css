@@ -20,12 +20,12 @@
   & .contact-container {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 
     & .contact-me {
       font-size: 1.75rem;
       line-height: 1.75rem;
       font-weight: var(--outfit-bold);
-      margin-bottom: 1rem;
       color: var(--rock-red);
     }
     
@@ -33,7 +33,6 @@
       font-size: 1.25rem;
       line-height: 1.25rem;
       font-weight: var(--outfit-light);
-      color: var(--secondary-text-color);
     }
   }
 }

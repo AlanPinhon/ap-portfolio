@@ -5,12 +5,12 @@ import CV from '../../assets/cv/alan-pinon-cv-2024.pdf';
 import './AboutMeStyles.css';
 
 export const AboutMe = () => (
-  <section className="about-me-container container">
+  <section id="about-me" className="about-me-container container">
     <div className="about-me-img">
       <img src={AlanPhoto} alt="alan-about-photo" />
     </div>
     <div className="about-me-info-container">
-      <h2 className="title-section" id="about-me">Sobre mi</h2>
+      <h2 className="title-section">Sobre mi</h2>
       <p className="about-me-text">
         Soy diseñador gráfico con más de <strong>10 años de experiencia</strong> en
         preparación de archivos para salida de impresión offset.

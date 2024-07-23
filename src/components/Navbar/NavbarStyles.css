@@ -54,14 +54,14 @@
 .header-nav {
   display: flex;
   align-items: center;
+  gap: 3rem;
 
   & .header-nav-link {
     text-decoration: none;
-    margin: 0 1rem;
     color: var(--main-text-color);
     font-size: var(--links-size);
     font-weight: var(--outfit-regular);
-    transition: .2s ease-in-out;
+    transition: .15s ease-in-out;
 
     &:hover {
       color: var(--rock-red);

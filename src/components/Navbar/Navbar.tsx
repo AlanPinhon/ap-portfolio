@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
 import LightLogo from '../../assets/img/ap-logos/logo-ap-1.svg';
 import DarkLogo from '../../assets/img/ap-logos/logo-ap-2.svg';
-import {DarkIcon, LightIcon} from '../../assets/icons';
 import { ThemeContext } from '../../context/ThemeContext';
+import { Icon } from '../../assets/icons/Icon';
 import './NavbarStyles.css'
 
 export const Navbar = () => {
@@ -48,15 +48,15 @@ export const Navbar = () => {
     
     <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
       <a onClick={closeMenu} className="header-nav-link" href="#about-me">Sobre mi</a>
-      <a onClick={closeMenu} className="header-nav-link" href="#about-me">Experiencia</a>
+      <a onClick={closeMenu} className="header-nav-link" href="#experience">Experiencia</a>
       <a onClick={closeMenu} className="header-nav-link" href="#projects">Proyectos</a>
       <a onClick={closeMenu} className="header-nav-link" href="#contact"> Contacto </a>
     </nav>
 
     <button onClick={toggleTheme} className="theme-btn">
-    { (theme === 'light') ? <DarkIcon/> : <LightIcon/> }
+    { (theme === 'light') ? <Icon name='DarkIcon'/> : <Icon name='LightIcon'/> }
     </button>
-
+    
   </section>
   )
 }
