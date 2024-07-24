@@ -39,7 +39,7 @@ export const Navbar = () => {
   }, [theme, setTheme])
 
   return (
-    <section className="nav-container container">
+    <section id="navbar" className="nav-container container">
 
     <img className="nav-ap-logo" src={(theme === 'light') ? LightLogo : DarkLogo }  alt="ap-logo"/>
     <button onClick={toggleMenu} className={`menu-btn ${isOpen ? 'fixed' : ''}`}>

@@ -1,0 +1,30 @@
+.arrow-btn {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 5rem;
+  right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--rock-red);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+
+  & .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--rock-red);
+    transition: all .1s ease-in-out;
+
+  }
+
+  &:hover {
+    background-color: var(--rock-red);
+
+    & .icon {
+      fill: var(--main-white);
+    }
+  }
+}

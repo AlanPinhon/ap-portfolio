@@ -6,10 +6,12 @@ import { Header } from "./components/Header/Header"
 import { Navbar } from "./components/Navbar/Navbar"
 import { Projects } from "./components/Projects/Projects"
 import { ThemeProvider } from "./context/ThemeProvider"
+import { ArrowButton } from './components/ArrowButton/ArrowButton';
 
 export const App = () => (
   <ThemeProvider>
-    <div className="back-gradient"></div>
+    <div id="home" className="back-gradient"></div>
+    <ArrowButton/>
     <Navbar/>
     <Header/>
     <AboutMe/>
