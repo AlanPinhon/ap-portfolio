@@ -5,7 +5,7 @@
   padding: 2rem;
   border-top: 1px solid var(--border-color);
   
-  & p {
+  & .copyright-notice {
     font-weight: var(--outfit-light);
   }
 }
@@ -13,23 +13,21 @@
 @media screen and (max-width: 740px) {
 
   .footer-container{
-    flex-direction: column;
-
-    & p {
-      margin-bottom: 1rem;
-    }
+    width: 80%;
+    padding: 2.5rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
   }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
 
   .footer-container {
-    padding: 2.5rem;
+    padding: 2rem 2.5rem;
 
-    & p {
+    & .copyright-notice {
       text-align: center;
-      margin-bottom: 2rem;
     }
   }
 }

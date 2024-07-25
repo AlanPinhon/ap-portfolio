@@ -42,6 +42,7 @@
 @media screen and (max-width: 740px) {
   .about-me-container {
     flex-direction: column-reverse;
+    gap: 5rem;
   }
 
   .about-me-img {
@@ -58,7 +59,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    gap: 3rem;
   }
 }
 

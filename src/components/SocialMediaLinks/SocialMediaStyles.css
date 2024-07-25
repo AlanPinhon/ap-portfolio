@@ -20,3 +20,9 @@
   }
 
 }
+
+@media screen and (max-width: 480px) {
+  .social-media-container {
+    gap: 2rem;
+  }
+}
