@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="header-text-container">
         <div className="text-container">
           <h3 className="welcome-text">¡Hola! Mi nombre es</h3>
-          <h1 className="name-text">Alan <span className="last-name">Pinhon</span></h1>
+          <h1 className="name-text">ALAN <span className="last-name">PINHON</span></h1>
           <p className="description">
             <strong>Diseñador gráfico &</strong> Desarrollador Web Front-End Jr
           </p>

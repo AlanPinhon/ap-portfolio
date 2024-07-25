@@ -14,11 +14,6 @@
   border: 1px solid var(--border-color);
 }
 
-.separator {
-  height: 65%;
-  border-left: 1px solid var(--border-color);
-}
-
 .project-content {
   width: 32.75rem;
   display: flex;

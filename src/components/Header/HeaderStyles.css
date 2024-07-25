@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 
 .header-text-container {
@@ -10,40 +10,39 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 5rem;
+  gap: 5rem;  
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.welcome-text {
+  font-family: var( --cheddar-font);
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-size);
+  font-weight: var(--cheddar-regular);
+}
+
+.name-text {
+  font-family: var( --cheddar-font);
+  color: var(--rock-red);
+  font-size: 7rem;
+  line-height: 7rem;
+  font-weight: var(--cheddar-regular);
   
-  & .text-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    
-    & .welcome-text {
-      font-family: var( --cheddar-font);
-      font-size: var(--subtitle-size);
-      line-height: var(--subtitle-size);
-      font-weight: var(--cheddar-regular);
-    }
-    
-    & .name-text {
-      font-family: var( --cheddar-font);
-      color: var(--rock-red);
-      font-size: 7rem;
-      line-height: 7rem;
-      font-weight: var(--cheddar-regular);
-      
-      & .last-name {
-        font-family: var( --cheddar-font);
-        color: var(--main-text-color);
-      }
-    }
-  
-    & .description {
-      font-size: 1.25rem;
-      line-height: 1.25rem;
-      font-weight: var(--outfit-regular);
-    }
+  & .last-name {
+    font-family: var( --cheddar-font);
+    color: var(--main-text-color);
   }
-  
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: var(--outfit-regular);
 }
 
 .welcome-photo-container {
@@ -66,8 +65,7 @@
 }
 
 @media screen and (max-width: 740px) {
-  .welcome-container {
-    flex-wrap: wrap;
+  .header-container {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -77,21 +75,29 @@
     width: 19rem;
   }
 
-  .welcome-container-presentation {
+  .header-text-container {
     width: 80%;
-    margin-top: 4rem;
+    margin-top: 3rem;
     align-items: center;
     text-align: center;
-
-    & .description {
-      margin: 2rem 0;
-    }
+    gap: 3rem;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .welcome-container {
-    padding: 2.5rem;
+@media screen and (max-width: 480px) {
+
+  .welcome-text {
+    font-size: var(--hero-text-size);
+  }
+
+  .name-text {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   .welcome-photo-container {

@@ -43,7 +43,7 @@ export const Navbar = () => {
 
     <img className="nav-ap-logo" src={(theme === 'light') ? LightLogo : DarkLogo }  alt="ap-logo"/>
     <button onClick={toggleMenu} className={`menu-btn ${isOpen ? 'fixed' : ''}`}>
-      {/* <img className={`menu-icon ${isOpen ? 'rotate' : ''}`} src={isOpen ? CloseIcon : MenuIcon}  alt="menu_icon"/> */}
+      {isOpen ? <Icon name='CloseIcon'/> : <Icon name='HamburgerIcon'/>}
     </button>
     
     <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
@@ -54,7 +54,7 @@ export const Navbar = () => {
     </nav>
 
     <button onClick={toggleTheme} className="theme-btn">
-    { (theme === 'light') ? <Icon name='DarkIcon'/> : <Icon name='LightIcon'/> }
+      {(theme === 'light') ? <Icon name='DarkIcon'/> : <Icon name='LightIcon'/>}
     </button>
     
   </section>
