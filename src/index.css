@@ -109,3 +109,9 @@ a {
   z-index: -1000;
   background: var(--gradient-header);
 }
+
+@media screen and (max-width: 480px) {
+  .subtitle-section {
+    font-size: 1.5rem;
+  }
+}

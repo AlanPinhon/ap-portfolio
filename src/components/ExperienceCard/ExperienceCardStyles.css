@@ -28,3 +28,22 @@
 .experience-icon {
   fill: var(--main-white);
 }
+
+@media screen and (max-width: 480px) {
+  .experience-card {
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .background-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex; 
+  }
+
+  .experience-icon {
+    width: auto;
+    height: .85rem;
+  }
+}
