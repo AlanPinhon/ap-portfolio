@@ -15,9 +15,7 @@ export const Header = () => {
         </div>
       <ContactButton className="contact-btn" href="mailto:alanpinon32@gmail.com">Contáctame</ContactButton>
       </div>
-      <div className="welcome-photo-container">
-        <img src={AlanPhoto} alt="Foto de Alan Piñón" />
-      </div>
+      <img className="header-img" src={AlanPhoto} alt="Foto de Alan Piñón" />
     </header>
   )
 }

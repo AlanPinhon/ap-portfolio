@@ -69,7 +69,7 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 690px) {
 
   .menu-btn {
     display: block;
@@ -83,6 +83,7 @@
     background-color: var(--background-elements);
     box-shadow: var(--shadow);
     z-index: 20;
+    order: 1;
 
     &.fixed {
       position: fixed;
@@ -94,7 +95,6 @@
       display: block;
       z-index: 30;
       transition: transform 0.1s ease-in-out;
-      order: 1;
   
       &.rotate{
         transform: rotate(90deg);

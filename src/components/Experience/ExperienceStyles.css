@@ -52,29 +52,38 @@
   font-weight: var(--outfit-regular);
 }
 
+@media screen and (max-width: 860px) {
 
-@media screen and (max-width: 650px) {
-
-  .experience-timeline-container {
-    width: 100%;
+  .experience-cards-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 5rem;
   }
 
 }
 
-@media screen and (max-width: 480px) {
-  
-  .experience-container {
-    padding: 2.5rem;
-  }
-  
+
+@media screen and (max-width: 690px) {
+
   .experience-cards-container {
-    flex-direction: column;
     gap: 2.5rem;
   }
 
   .academy-container,
   .work-container {
     gap: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .experience-cards-container {
+    width: 100%;
+  }
+  
+  .experience-container {
+    padding: 2.5rem;
   }
 
 
