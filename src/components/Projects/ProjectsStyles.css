@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   gap: 3rem;
 }
 
@@ -14,9 +14,18 @@
   gap: 5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 690px) {
 
   .projects-container {
-    padding: 2.5rem;
+    padding: 5rem 2rem;
   }
+  
+}
+
+@media screen and (max-width: 480px) {
+
+  .projects-container {
+    padding: 4rem 2.5rem;
+  }
+  
 }

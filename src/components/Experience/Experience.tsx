@@ -13,7 +13,7 @@ export const Experience = () => (
           <div className="academy-container">
             <h4 className="experience-title">React: De cero a experto ( Hooks y MERN )</h4>
             <div className="container-source">
-              <p className="experience-paragraph">Fernando Herrera - Udemy</p>
+              <p className="experience-paragraph">Fernando Herrera</p>
               <a href="https://www.udemy.com/course/react-cero-experto/" target='_blank'>Ir al curso</a>
             </div>
           </div>
@@ -21,7 +21,7 @@ export const Experience = () => (
           <div className="academy-container">
             <h4 className="experience-title">TypeScript: Completa guía y manual de mano</h4>
             <div className="container-source">
-              <p className="experience-paragraph">Fernando Herrera - Udemy</p>
+              <p className="experience-paragraph">Fernando Herrera</p>
               <a href="https://www.udemy.com/course/typescript-guia-completa/" target='_blank'>Ir al curso</a>
             </div>
           </div>
@@ -29,7 +29,7 @@ export const Experience = () => (
           <div className="academy-container">
             <h4 className="experience-title">JavaScript Moderno Guía Definitiva</h4>
             <div className="container-source">
-              <p className="experience-paragraph">Juan Pablo de la Torre Valdez - Udemy</p>
+              <p className="experience-paragraph">Juan Pablo de la Torre Valdez</p>
               <a href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/" target='_blank'>Ir al curso</a>
             </div>
           </div>
@@ -37,7 +37,7 @@ export const Experience = () => (
           <div className="academy-container">
             <h4 className="experience-title">Diseño Web Desde Cero a Avanzado</h4>
             <div className="container-source">
-              <p className="experience-paragraph">Jose Javier Villena - Udemy</p>
+              <p className="experience-paragraph">Jose Javier Villena</p>
               <a href="https://www.udemy.com/course/diseno-web-desde-cero/" target='_blank'>Ir al curso</a>
             </div>
           </div>
@@ -45,7 +45,7 @@ export const Experience = () => (
           <div className="academy-container">
             <h4 className="experience-title">CETIS 165 - Bachillerato Tecnológico</h4>
             <div className="container-source">
-              <p className="experience-paragraph">Técnico en Diseño y Proyecto Gráfico</p>
+              <p className="experience-paragraph">Técnico en Diseño Gráfico</p>
               <p className="experience-paragraph academy-year">2007-2011</p>
             </div>
           </div>

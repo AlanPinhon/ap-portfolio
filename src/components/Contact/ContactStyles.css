@@ -1,7 +1,7 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 }
 
 .contact-info {
@@ -9,54 +9,93 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  & .contact-img {
-    width: 10rem;
-    height: 10rem;
-    border: 2px solid var(--rock-red);
-    border-radius: 50%;
+.contact-img {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid var(--rock-red);
+  border-radius: 50%;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & .contact-me {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: var(--outfit-bold);
+    color: var(--rock-red);
+  }
+  
+  & .contact-me-info {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: var(--outfit-light);
+  }
+}
+
+@media screen and (max-width: 1010px) {
+
+  .contact-img {
+    width: 9rem;
+    height: 9rem;
   }
 
-  & .contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
+  .contact-text-container {
+  
     & .contact-me {
-      font-size: 1.75rem;
-      line-height: 1.75rem;
-      font-weight: var(--outfit-bold);
-      color: var(--rock-red);
+      font-size: 1.5rem;
+      line-height: 1.5rem;
     }
     
     & .contact-me-info {
-      font-size: 1.25rem;
-      line-height: 1.25rem;
-      font-weight: var(--outfit-light);
+      font-size: 1.1rem;
     }
   }
+
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 750px) {
+
   .contact-info { 
     flex-direction: column;
+    gap: 2rem;
+  }
 
-    & .contact-me-text {
-      margin: 1rem 0 2rem;
+  .contact-img {
+    width: 15rem;
+    height: 15rem;
+  }
 
-      & .contact-me {
-        text-align: center;
-      }
-
-      & .contact-me-info {
-        text-align: center;
-      }
+  .contact-text-container {
+  
+    & .contact-me {
+      text-align: center;
     }
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
+
   .contact-container {
     padding: 2.5rem;
   }
+
+  .contact-img {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .contact-text-container {
+    gap: 1.5rem;
+
+    & .contact-me-info {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
 }

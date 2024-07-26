@@ -28,3 +28,50 @@
 .experience-icon {
   fill: var(--main-white);
 }
+
+@media screen and (max-width: 1000px) {
+
+  .experience-card {
+    width: 25rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+
+  .experience-card {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .experience-card {
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .experience-card {
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .background-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex; 
+  }
+
+  .experience-icon {
+    width: auto;
+    height: .85rem;
+  }
+}

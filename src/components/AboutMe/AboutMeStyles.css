@@ -1,8 +1,15 @@
 .about-me-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
+  gap: 3rem;
+}
+
+.about-me-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-me-img {
@@ -20,7 +27,7 @@
   }
 }
 
-.about-me-info-container {
+.about-me-text-container {
   width: 33.75rem;
   display: flex;
   flex-direction: column;
@@ -33,39 +40,71 @@
 
 }
 
-@media screen and (max-width: 930px) {
-  .about-me-info-container {
-    width: 55%;
+@media screen and (max-width: 960px) {
+
+  .about-me-img {
+    width: 20rem;
+    height: 28.5rem;
   }
+
+  .about-me-text-container {
+    width: 28rem;
+  }
+
 }
 
-@media screen and (max-width: 740px) {
-  .about-me-container {
-    flex-direction: column-reverse;
+@media screen and (max-width: 860px) {
+  
+  .about-me-text-container {
+    width: 23rem;
   }
 
-  .about-me-img-container .about-me-img {
-    width: 13rem;
-  }
+}
 
+@media screen and (max-width: 780px) {
+
+  .about-me-img {
+    width: 20rem;
+    height: 20rem;
+  }
+  
   .about-me-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-me-text-container {
+    width: 90%;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .about-me-container {
+    padding: 5rem 2rem;
+  }
+
+}
+@media screen and (max-width: 480px) {
+
+  .about-me-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .about-me-text-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
-
-    & .subtitle-section,
-      .about-me-text {
-      text-align: center;
-    }
+    gap: 3rem;
   }
-}
-
-@media screen and (max-width: 500px) {
 
   .about-me-container {
-    padding: 2.5rem;
+    padding: 4rem 2.5rem;
   }
 
 }

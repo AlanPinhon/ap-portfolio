@@ -11,7 +11,7 @@
   --dark-gray: #404040;
 
   /* Gradients */
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(228, 228, 228) 0%, rgb(255, 255, 255) 100%);
+  --gradient-header: radial-gradient(100% 50% at center top, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   
   /* Background & Elements Colors */
@@ -19,7 +19,8 @@
   --back-btn-theme: var(--soft-gray);
   --hover-btn-theme: var(--dark-night);
   --main-text-color: var(--main-black);
-  --menu-background: var(--soft-gray);
+  --menu-background: rgba(238, 238, 238, 0.9);
+  --navbar-background: rgba(255, 255, 255, 0.5);
   --back-experience-card: #F0F0F0;
   --border-color: var(--light-gray);
   --secondary-text-color: var(--dark-gray);
@@ -45,7 +46,8 @@
   --main-background-color: var(--dark-night);
   --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(201, 201, 201) 100%);
-  --menu-background: var(--light-gray);
+  --menu-background: rgba(34, 34, 34, 0.9);
+  --navbar-background: rgba(0, 0, 0, 0.5);
   --back-btn-theme: var(--dark-night);
   --hover-btn-theme: var(--soft-gray);
   --back-experience-card: #18181B;
@@ -108,4 +110,10 @@ a {
   position: absolute;
   z-index: -1000;
   background: var(--gradient-header);
+}
+
+@media screen and (max-width: 480px) {
+  .subtitle-section {
+    font-size: 1.5rem;
+  }
 }

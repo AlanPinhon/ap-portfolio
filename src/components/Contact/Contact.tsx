@@ -10,7 +10,7 @@ export const Contact = () => {
 
         <img className='contact-img' src={ContactPhoto} alt="Alan Piñón Profile" />
 
-        <div className="contact-container">
+        <div className="contact-text-container">
           <h3 className="contact-me">¡Colaboremos juntos!</h3>
           <p className="contact-me-info">
             Estoy disponible para discutir oportunidades

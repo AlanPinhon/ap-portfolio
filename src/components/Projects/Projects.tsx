@@ -99,7 +99,7 @@ export const Projects = () => (
         altImg='Advice Generator WebSite'
         title='Advice Generator'
         description='Proyecto para generar consejos de forma aleatoria utilizando
-        Advice Slip API y genera un nuevo consejo al dar clic en el ícono
+        Advice Slip API y genera un nuevo consejo al dar clic en el ícono.
         Muestra un mensaje de error si falla la conexión.'
         tags={[tagList.react, tagList.vite, tagList.ts, tagList.vitest, tagList.msw]}
       >
