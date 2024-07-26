@@ -14,10 +14,18 @@
   gap: 5rem;
 }
 
+@media screen and (max-width: 690px) {
+
+  .projects-container {
+    padding: 5rem 2rem;
+  }
+  
+}
+
 @media screen and (max-width: 480px) {
 
   .projects-container {
-    padding: 2.5rem;
+    padding: 4rem 2.5rem;
   }
   
 }

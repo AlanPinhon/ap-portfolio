@@ -81,6 +81,13 @@
 
 }
 
+@media screen and (max-width: 690px) {
+
+  .about-me-container {
+    padding: 5rem 2rem;
+  }
+
+}
 @media screen and (max-width: 480px) {
 
   .about-me-img {
@@ -97,7 +104,7 @@
   }
 
   .about-me-container {
-    padding: 2.5rem;
+    padding: 4rem 2.5rem;
   }
 
 }

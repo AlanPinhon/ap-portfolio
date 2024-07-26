@@ -86,7 +86,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem;
+    padding: 10rem 2.5rem 2.5rem 2.5rem;
   }
 
   .header-text-container {
@@ -120,7 +120,6 @@
 
   .name-text {
     font-size: 4.5rem;
-    line-height: 4.5rem;
   }
 
   .description {

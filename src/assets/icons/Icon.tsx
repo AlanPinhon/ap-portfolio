@@ -53,14 +53,15 @@ export type IconName =
 'WebpackIcon' |
 'WorkIcon';
 
-type IconProps = {
+export type IconProps = {
   name: IconName;
+  className?: string;
 }
 
-export const Icon = ({name}:IconProps) => {
+export const Icon = ({name, className}:IconProps) => {
   const Component = Icons[name]
 
   return (
-    <Component/>
+    <Component name={name} className={className}/>
   )
 }

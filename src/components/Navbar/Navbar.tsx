@@ -42,8 +42,8 @@ export const Navbar = () => {
     <section id="navbar" className="nav-container container">
 
     <img className="nav-ap-logo" src={(theme === 'light') ? LightLogo : DarkLogo }  alt="ap-logo"/>
-    <button onClick={toggleMenu} className={`menu-btn ${isOpen ? 'fixed' : ''}`}>
-      {isOpen ? <Icon name='CloseIcon'/> : <Icon name='HamburgerIcon'/>}
+    <button onClick={toggleMenu} className="menu-btn">
+      <Icon name={isOpen ? 'CloseIcon' : 'HamburgerIcon'} className={isOpen ? 'rotate' : ''}/>
     </button>
     
     <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
