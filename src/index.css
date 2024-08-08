@@ -80,6 +80,7 @@ body{
 .title-section {
   font-size: var(--title-size);
   line-height: var(--title-size);
+  letter-spacing: .15rem;
   font-family: var(--cheddar-font);
   font-weight: var(--cheddar-regular);
   color: var(--rock-red);
