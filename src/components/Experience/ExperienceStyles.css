@@ -47,9 +47,18 @@
   color: var(--secondary-text-color);
 }
 
+.experience-link {
+  font-weight: var(--outfit-medium);
+  color: var(--rock-red);
+
+  &:hover {
+    color: #e20000;
+  }
+}
+
 .academy-year {
-  color: var(--main-text-color);
-  font-weight: var(--outfit-regular);
+  color: var(--rock-red);
+  font-weight: var(--outfit-medium);
 }
 
 @media screen and (max-width: 860px) {
