@@ -14,7 +14,7 @@ export const AboutMe = () => (
       </div>
       <div className="about-me-text-container">
         <p className="about-me-text">
-          Soy diseñador gráfico con más de <strong>10 años de experiencia</strong> en
+          Me llamo <strong>Alan Piñón</strong> y soy un diseñador gráfico mexicano con más de <strong>10 años de experiencia</strong> en
           preparación de archivos para salida de impresión offset.
           <br />
           <br />
