@@ -1,6 +1,7 @@
 .contact-btn {
-  width: 10rem;
-  padding: 1rem 1.5rem;
+  width: 11rem;
+  padding: 1rem 1.25rem;
+  letter-spacing: .08rem;
   text-align: center;
   text-decoration: none;
   font-family: var(--cheddar-font);
@@ -14,7 +15,7 @@
   transition: .15s ease-in-out;
 
   &:hover {
-    background-color: #FF8C8C;
+    background-color: #cc0000;
     color: var(--main-white);
   }
 }
