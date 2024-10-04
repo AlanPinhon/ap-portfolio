@@ -1,4 +1,5 @@
 import { ProjectCard } from '../ProjectCard/ProjectCard';
+import HelseBitesBrand from '../../assets/img/project-img/helsebites-cover.jpg';
 import DeepFeelsUI from '../../assets/img/project-img/deep-feels-ui-cover.jpg';
 import DeepFeelsBrand from '../../assets/img/project-img/df-brand-cover.jpg';
 import RestCountries from '../../assets/img/project-img/countries-cover.jpg';
@@ -15,6 +16,20 @@ export const Projects = () => (
     <h2 className="title-section">Proyectos</h2>
 
     <div className="project-cards-container">
+
+      <ProjectCard
+        img={HelseBitesBrand}
+        altImg='HelseBites Logo'
+        title='HelseBites Visual Identity'
+        description='Creación de la identidad visual de la marca
+        HelseBites, la cual elabora snacks saludables con una misión clara:
+        ofrecer alimentos naturales que promuevan un estilo de vida equilibrado.'
+        tags={[tagList.ps, tagList.ai]}
+      >
+        <ButtonLink href='https://www.behance.net/gallery/209430543/HelseBites-Snacks-Visual-Identity'>
+          <Icon name='LinkIcon'/>
+          Proyecto</ButtonLink>
+      </ProjectCard>
 
       <ProjectCard
         img={DeepFeelsUI}
