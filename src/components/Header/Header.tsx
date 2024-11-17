@@ -1,19 +1,31 @@
-import { ContactButton } from "../ContactButton/ContactButton"
-import AlanPhoto from '../../assets/img/ap-photos/foto_hero.webp';
+import { CtaButton } from "../CtaButton/CtaButton"
+import AlanPhoto from '../../assets/img/ap-photos/portfolio-img-fondo.png';
+import { ThemeContext } from "../../context/ThemeContext";
+import { useContext } from "react";
 import './HeaderStyles.css';
 
 export const Header = () => {
+
+  const {theme} = useContext(ThemeContext);
+
   return (
     <header className="header-container container">
       <div className="header-text-container">
         <div className="text-container">
-          <h3 className="welcome-text">¡Hola! Mi nombre es</h3>
-          <h1 className="name-text">ALAN <span className="last-name">PINHON</span></h1>
+          <h2 className="header-title">
+            Transformo tus ideas en experiencias visuales digitales únicas
+          </h2>
           <p className="description">
-            <strong>Diseñador gráfico &</strong> Desarrollador Web Front-End Jr
+            Desde el diseño hasta el desarrollo, combino creatividad y
+            funcionalidad para que tu marca se destaque.
           </p>
         </div>
-      <ContactButton className="contact-btn" href="mailto:alanpinon32@gmail.com">Contáctame</ContactButton>
+
+        <div className="cta-container">
+          <CtaButton className="contact-btn primary" href="#projects">Ver Proyectos</CtaButton>
+          <CtaButton className={`contact-btn ${(theme === 'light') ? 'secondary' : 'white'}`} href="mailto:alanpinon32@gmail.com">Contacto</CtaButton>
+        </div>
+
       </div>
       <img className="header-img" src={AlanPhoto} alt="Foto de Alan Piñón" />
     </header>

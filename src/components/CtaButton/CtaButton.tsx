@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContactButtonStyles.css';
+import './CtaButtonStyles.css';
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type ButtonProps = {
   href?: string;
 }
 
-export const ContactButton = ({children, className, href, download}:ButtonProps) => (
+export const CtaButton = ({children, className, href, download}:ButtonProps) => (
   <a
     className={className}
     href={href}

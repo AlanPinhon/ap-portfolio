@@ -1,4 +1,4 @@
-import { ContactButton } from '../ContactButton/ContactButton';
+import { ContactButton } from '../CtaButton/CtaButton';
 import ContactPhoto from '../../assets/img/ap-photos/foto_ap_perfil.webp'
 import './ContactStyles.css';
 

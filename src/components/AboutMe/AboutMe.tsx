@@ -1,6 +1,6 @@
 import AlanPhoto from '../../assets/img/ap-photos/about-me-photo.webp';
 import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
-import { ContactButton } from '../ContactButton/ContactButton';
+import { ContactButton } from '../CtaButton/CtaButton';
 import CV from '../../assets/cv/alan-pinon-cv-2024.pdf';
 import './AboutMeStyles.css';
 

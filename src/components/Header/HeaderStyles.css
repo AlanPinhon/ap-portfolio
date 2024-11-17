@@ -11,20 +11,19 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 5rem;  
+  gap: 3rem;  
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-.welcome-text {
-  font-family: var( --cheddar-font);
-  font-size: var(--subtitle-size);
-  line-height: var(--subtitle-size);
-  font-weight: var(--cheddar-regular);
+.header-title {
+  font-family: var( --outfit-font);
+  font-size: var(--title-size);
+  font-weight: var(--outfit-bold);
 }
 
 .name-text {
@@ -42,14 +41,17 @@
 
 .description {
   font-size: 1.25rem;
-  line-height: 1.25rem;
-  font-weight: var(--outfit-regular);
+  line-height: 2.25rem;
+  font-weight: var(--outfit-light);
+}
+
+.cta-container{
+  display: flex;
+  gap: 1rem;
 }
 
 .header-img {
-  width: 27rem;
-  border-radius: 50%;
-  border: 5px solid var(--rock-red);
+  width: 22.5rem;
   object-fit: fill;
   object-position: center center;
 }
@@ -60,7 +62,7 @@
     gap: 1rem;
   }
 
-  .welcome-text {
+  .header-title {
     font-size: 1.75rem;
     line-height: 1.75rem;
     font-weight: var(--cheddar-regular);
@@ -114,7 +116,7 @@
 
 @media screen and (max-width: 480px) {
 
-  .welcome-text {
+  .header-title {
     font-size: var(--hero-text-size);
   }
 
