@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
-import LightLogo from '../../assets/img/ap-logos/logo-ap-1.svg';
-import DarkLogo from '../../assets/img/ap-logos/logo-ap-2.svg';
+import LightLogo from '../../assets/img/ap-logos/black-logo-ap-horizontal.svg';
+import DarkLogo from '../../assets/img/ap-logos/white-logo-ap-horizontal.svg';
 import { ThemeContext } from '../../context/ThemeContext';
 import { Icon } from '../../assets/icons/Icon';
 import './NavbarStyles.css'
@@ -51,11 +51,14 @@ export const Navbar = () => {
       <a onClick={closeMenu} className="header-nav-link" href="#experience">Experiencia</a>
       <a onClick={closeMenu} className="header-nav-link" href="#projects">Proyectos</a>
       <a onClick={closeMenu} className="header-nav-link" href="#contact"> Contacto </a>
+      
+      <div className="separator"></div>
+      
+      <button onClick={toggleTheme} className="theme-btn">
+        <Icon name={(theme === 'light') ? 'DarkIcon' : 'LightIcon'}/>
+      </button>
     </nav>
 
-    <button onClick={toggleTheme} className="theme-btn">
-      {(theme === 'light') ? <Icon name='DarkIcon'/> : <Icon name='LightIcon'/>}
-    </button>
     
   </section>
   )

@@ -10,10 +10,10 @@ export const App = () => (
   <ThemeProvider>
     <div id="home" className="back-gradient"></div>
     <Navbar/>
-    <AboutMe/>
-    <Experience/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
+    {/* <AboutMe/> */}
+    {/* <Experience/> */}
+    {/* <Projects/> */}
+    {/* <Contact/> */}
+    {/* <Footer/> */}
   </ThemeProvider>
 )
