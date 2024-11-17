@@ -11,7 +11,7 @@
   --dark-gray: #404040;
 
   /* Gradients */
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
+  --background-section: #F9FAFB;
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
   
   /* Background & Elements Colors */
@@ -35,16 +35,16 @@
   --outfit-medium: 500;
   --outfit-semi-bold: 600;
   --outfit-bold: 700;
-  --title-size: 2.75rem;
+  --title-size: 2.5rem;
   --subtitle-size: 2rem;
   --hero-text-size: 1.5rem;
-  --about-me-size: 1.1rem;
+  --about-me-size: 1.25rem;
   --links-size: 1rem;
 }
 
 [data-theme="dark"] {
   --main-background-color: var(--dark-night);
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
+  --background-section: #121212;
   --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(201, 201, 201) 100%);
   --menu-background: rgba(34, 34, 34, 0.9);
   --navbar-background: rgba(0, 0, 0, 0.5);
@@ -79,10 +79,8 @@ body{
 
 .title-section {
   font-size: var(--title-size);
-  line-height: var(--title-size);
-  letter-spacing: .15rem;
-  font-family: var(--cheddar-font);
-  font-weight: var(--cheddar-regular);
+  font-family: var(--outfit-font);
+  font-weight: var(--outfit-bold);
   color: var(--rock-red);
 }
 
@@ -105,12 +103,11 @@ a {
   }
 }
 
-.back-gradient {
+.background-section {
   width: 100%;
-  height: 700px;
   position: absolute;
-  z-index: -1000;
-  background: var(--gradient-header);
+  z-index: -2000;
+  background-color: var(--background-section);
 }
 
 @media screen and (max-width: 480px) {

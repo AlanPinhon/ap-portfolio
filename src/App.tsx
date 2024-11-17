@@ -9,10 +9,9 @@ import { Header } from './components/Header/Header';
 
 export const App = () => (
   <ThemeProvider>
-    <div id="home" className="back-gradient"></div>
     <Navbar/>
     <Header/>
-    {/* <AboutMe/> */}
+    <AboutMe/>
     {/* <Experience/> */}
     {/* <Projects/> */}
     {/* <Contact/> */}

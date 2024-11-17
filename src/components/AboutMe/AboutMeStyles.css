@@ -13,13 +13,16 @@
 }
 
 .about-me-img {
-  width: 21.5rem;
-  height: 30.5rem;
-  background: var(--photo-gradient);
-  border-radius: 2rem;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 
   & img {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 2rem;
+    overflow: hidden;
     width: 100%;
     object-fit: cover;
     object-position: center top;
@@ -31,11 +34,18 @@
   width: 33.75rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: flex-start;
+  gap: 2.5rem;
 
   & .about-me-text {
+    line-height: var(--subtitle-size);
     font-size: var(--about-me-size);
     font-weight: var(--outfit-light);
+
+    & .bold {
+      color: var(--rock-red);
+      font-weight: var(--outfit-bold);
+    }
   }
 
 }
