@@ -7,18 +7,19 @@
   --rock-red: #ff2d2d;
   --soft-gray: #e4e4e4;
   --dark-night: #1A1A1A;
-  --light-gray: #ddd;
+  --light-gray: #DFDFDF;
   --dark-gray: #404040;
   --shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   /* Gradients */
   --background-section: #F9FAFB;
-  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
+  --background-tag-color: var(--soft-gray);
   
   /* Background & Elements Colors */
   --main-background-color: var(--main-white);
-  --back-btn-theme: var(--soft-gray);
-  --hover-btn-theme: var(--dark-night);
+  --link-btn: var(--rock-red);
+  --hover-link-btn: #CC0000;
+  --hover-text-btn: var(--main-white);
   --main-text-color: var(--main-black);
   --menu-background: rgba(238, 238, 238, 0.9);
   --navbar-background: rgba(255, 255, 255, 0.5);
@@ -46,11 +47,12 @@
 [data-theme="dark"] {
   --main-background-color: var(--dark-night);
   --background-section: #121212;
-  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(201, 201, 201) 100%);
+  --background-tag-color: #2A2A2A;
   --menu-background: rgba(34, 34, 34, 0.9);
   --navbar-background: rgba(0, 0, 0, 0.5);
-  --back-btn-theme: var(--dark-night);
-  --hover-btn-theme: var(--soft-gray);
+  --link-btn: var(--main-white);
+  --hover-link-btn: var(--main-white);
+  --hover-text-btn: var(--rock-red);
   --back-experience-card: #2A2A2A;
   --border-color: var(--dark-gray);
   --secondary-text-color: var(--light-gray);
