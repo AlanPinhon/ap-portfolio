@@ -1,11 +1,11 @@
 .experience-card {
   display: flex;
   flex-direction: column;
-  width: 29.25rem;
+  width: 100%;
   gap: 3rem;
   padding: 3rem;
   border-radius: 1rem;
-  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
   background-color: var(--back-experience-card);
 }
 

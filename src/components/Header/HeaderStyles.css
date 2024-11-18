@@ -39,12 +39,6 @@
   }
 }
 
-.description {
-  font-size: 1.25rem;
-  line-height: 2.25rem;
-  font-weight: var(--outfit-light);
-}
-
 .cta-container{
   display: flex;
   gap: 1rem;
