@@ -15,6 +15,6 @@ export const App = () => (
     <Experience/>
     <Projects/>
     <Contact/>
-    {/* <Footer/> */}
+    <Footer/>
   </ThemeProvider>
 )
