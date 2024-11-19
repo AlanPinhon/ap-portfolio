@@ -39,7 +39,7 @@ export const Projects = () => (
           React & TypeScript que proporciona un conjunto coherente de
           componentes reutilizables, estilos y pautas de diseño para
           facilitar el desarrollo de la aplicación Deep Feels.'
-          tags={[]}
+          tags={['React', 'TypeScript', 'Styled Components', 'Webpack', 'Storybook', 'Jest', 'Figma']}
         >
           <ButtonLink href='https://github.com/AlanPinhon/deep-feels-ui'>
             <Icon name='GithubIcon'/>
@@ -57,7 +57,7 @@ export const Projects = () => (
           marca Deep Feels; aplicación que ayuda a las personas a relajarse
           y mejorar su estado de ánimo, ofreciendo una gran variedad de sonidos
           relajantes.'
-          tags={[]}
+          tags={['Photoshop', 'Illustrator']}
         >
           <ButtonLink href='https://www.behance.net/gallery/201145373/Deep-Feels-Relaxing-App-Brand-Visual-Identity'>
             <Icon name='LinkIcon'/>
@@ -71,7 +71,7 @@ export const Projects = () => (
           description='Proyecto para buscar información de los países del mundo,
           integrada con la API de REST Countries, Cambia el tema de claro a oscuro de
           forma manual y tomando la configuración del dispositivo del usuario.'
-          tags={[]}
+          tags={['React', 'Vite', 'TypeScript', 'Vitest', 'React Router', 'Mock Service Worker']}
         >
           <ButtonLink href='https://github.com/AlanPinhon/rest-countries-api-ts'>
             <Icon name='GithubIcon'/>

@@ -14,7 +14,7 @@ export const App = () => (
     <AboutMe/>
     <Experience/>
     <Projects/>
-    {/* <Contact/> */}
+    <Contact/>
     {/* <Footer/> */}
   </ThemeProvider>
 )

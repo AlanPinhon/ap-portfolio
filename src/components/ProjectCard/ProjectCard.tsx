@@ -12,9 +12,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({altImg, description, img, children, title, tags}:ProjectCardProps) => (
   <section className="project-card">
-    <div className="project-img-container">
-      <img className='project-img' src={img} alt={altImg} />
-    </div>
+    <img className='project-img' src={img} alt={altImg} />
     <div className="project-content">
       <div className="project-info">
         <h4 className="project-title">{title}</h4>
