@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .contact-info {
@@ -22,11 +22,12 @@
   );
 }
 
-.projects-img{
+.projects-img {
   position: absolute;
   z-index: -50;
   height: 100%;
   right: 0;
+  top: 0;
 }
 
 .contact-text-container {
@@ -52,16 +53,10 @@
 
 @media screen and (max-width: 1010px) {
 
-  .contact-img {
-    width: 9rem;
-    height: 9rem;
-  }
-
   .contact-text-container {
   
     & .contact-me {
       font-size: 1.5rem;
-      line-height: 1.5rem;
     }
     
     & .contact-me-info {
@@ -71,43 +66,37 @@
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 560px) {
 
-  .contact-info { 
+  .contact-info {
+    max-width: 25rem;
+    height: 35rem;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: flex-end;
+    padding: 3rem;
+    background: radial-gradient(
+      100% 50% at 50% 0%,
+      rgba(255, 45, 45, 0.1) 0%,
+      rgba(255, 45, 45) 100%
+    );
   }
-
-  .contact-img {
-    width: 15rem;
-    height: 15rem;
-  }
-
-  .contact-text-container {
-  
-    & .contact-me {
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  .contact-container {
-    padding: 2.5rem;
-  }
-
-  .contact-img {
-    width: 12.5rem;
-    height: 12.5rem;
+  .projects-img {
+    height: 60%;
+    top: -.5rem;
+    right: unset;
   }
 
   .contact-text-container {
+    width: 100%;
+    align-items: center;
     gap: 1.5rem;
+
+    & .contact-me {
+      line-height: normal;
+    }
 
     & .contact-me-info {
       font-size: 1rem;
-      text-align: center;
     }
   }
 

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
   gap: 3rem;
 }
 
@@ -90,20 +90,17 @@
   }
 }
 
-.academy-year {
-  width: 9.75rem;
-  text-align: end;
-  color: var(--rock-red);
-  font-weight: var(--outfit-medium);
-}
-
 @media screen and (max-width: 860px) {
 
-  .experience-cards-container {
-    width: 90%;
-    flex-direction: column;
-    gap: 5rem;
+  .academy-container,
+  .work-container {
+    gap: 2rem;
   }
+
+  .job-place,
+  .instructor-name {
+    width: 8.5rem;
+  }  
 
 }
 
@@ -111,7 +108,7 @@
 @media screen and (max-width: 690px) {
 
   .experience-container {
-    padding: 5rem 2rem;
+    padding: 7rem 2rem 5rem 2rem;
   }
 
   .experience-cards-container {
@@ -121,6 +118,27 @@
   .academy-container,
   .work-container {
     gap: 1rem;
+    flex-direction: column;
+  }
+
+  .column {
+    order: 1;
+  }
+
+  .exp-info {
+    width: 100%;
+    order: 3;
+  }
+
+  .job-place,
+  .instructor-name {
+    width: 100%;
+  }
+  
+  .work-year,
+  .experience-link {
+    width: 100%;
+    text-align: start;
   }
 
 }

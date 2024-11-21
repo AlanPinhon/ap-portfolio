@@ -26,19 +26,6 @@
   font-weight: var(--outfit-bold);
 }
 
-.name-text {
-  font-family: var( --cheddar-font);
-  color: var(--rock-red);
-  font-size: 7rem;
-  line-height: 7rem;
-  font-weight: var(--cheddar-regular);
-  
-  & .last-name {
-    font-family: var( --cheddar-font);
-    color: var(--main-text-color);
-  }
-}
-
 .cta-container{
   display: flex;
   gap: 1rem;
@@ -50,39 +37,12 @@
   object-position: center center;
 }
 
-@media screen and (max-width: 1024px) {
-
-  .text-container {
-    gap: 1rem;
-  }
-
-  .header-title {
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-    font-weight: var(--cheddar-regular);
-  }
-
-  .name-text {
-    font-size: 6rem;
-  }
-
-  .description {
-    font-size: 1.15rem;
-    line-height: 1.15rem;
-  }
-
-  .header-img {
-    width: 22rem;
-  }
-}
-
 @media screen and (max-width: 860px) {
 
   .header-container {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 10rem 2.5rem 2.5rem 2.5rem;
   }
 
   .header-text-container {
@@ -97,9 +57,8 @@
 
 @media screen and (max-width: 690px) {
 
-  .name-text {
-    font-size: 5rem;
-    line-height: 5rem;
+  .header-container {
+    padding: 10rem 2.5rem 5rem 2.5rem;
   }
 
   .header-img {
@@ -110,24 +69,20 @@
 
 @media screen and (max-width: 480px) {
 
-  .header-title {
-    font-size: var(--hero-text-size);
-  }
-
-  .name-text {
-    font-size: 4.5rem;
-  }
-
-  .description {
-    font-size: .9rem;
+  .header-text-container {
+    width: 90%;
   }
 
   .header-img {
     width: 75%;
   }
 
-  .welcome-container-presentation {
-    width: 90%;
+  .header-title {
+    font-size: var(--subtitle-size);
+  }
+
+  .cta-container {
+    flex-direction: column;
   }
 
 }

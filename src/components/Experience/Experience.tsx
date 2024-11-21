@@ -170,7 +170,7 @@ export const Experience = () => (
               <h4 className="course-title">Técnico en Diseño y Proyecto Gráfico</h4>
             </div>
             <div className="column">
-              <p className="course-projects academy-year">Gen 2007 - 2011</p>
+              <p className="work-year">Gen 2007 - 2011</p>
             </div>
           </div>
 

@@ -17,9 +17,14 @@
 
 @media screen and (max-width: 560px) {
 
-  .footer-container .separator {
-    flex-direction: column;
-    gap: 2rem;
+  .footer-container {
+
+    padding: 0 2rem 2rem 2rem;
+
+    & .separator {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   .footer-container .copyright-notice {

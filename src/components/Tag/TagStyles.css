@@ -17,6 +17,6 @@
 .tag-name {
   font-size: .75rem;
   line-height: 1rem;
-  font-weight: var(--outfit-medium);
+  font-weight: var(--outfit-regular);
   color: var(--main-text-color);
 }

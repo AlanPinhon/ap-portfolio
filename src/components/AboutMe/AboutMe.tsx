@@ -16,6 +16,7 @@ export const AboutMe = () => (
         <div className="about-me-img">
           <img src={AlanPhoto} alt="alan-about-photo" />
           <SocialMediaLinks/>
+          <CtaButton className="contact-btn primary img-btn" href={CV} download='Alan Piñón CV.pdf'>Descargar CV</CtaButton>
         </div>
         <div className="about-me-text-container">
             <h2 className="title-section">¿Quién soy?</h2>
@@ -33,7 +34,7 @@ export const AboutMe = () => (
               a establecer una presencia visual sólida.
             </p>
           </div>
-          <CtaButton className="contact-btn primary" href={CV} download='Alan Piñón CV.pdf'>Descargar CV</CtaButton>
+          <CtaButton className="contact-btn primary about-me-btn" href={CV} download='Alan Piñón CV.pdf'>Descargar CV</CtaButton>
         </div>
       </div>
   

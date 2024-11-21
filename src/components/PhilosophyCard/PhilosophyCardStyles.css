@@ -1,6 +1,6 @@
-.philosophy-card{
-  width: 19rem;
-  height: 17rem;
+.philosophy-card {
+  width: 30%;
+  height: 18rem;
   display: flex;
   gap: 2rem;
   padding: 2rem;
@@ -25,4 +25,28 @@
 .philosophy-text {
   line-height: 1.5rem;
   font-weight: var(--outfit-light);
+}
+
+@media screen and (max-width: 860px) {
+
+  .philosophy-card {
+    width: 31.5%;
+    height: 20rem;
+    padding: 2rem 1rem;
+  }
+
+  .philosophy-card-header {
+    gap: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+
+  .philosophy-card {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
 }

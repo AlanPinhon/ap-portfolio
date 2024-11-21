@@ -29,21 +29,11 @@
   fill: var(--main-white);
 }
 
-@media screen and (max-width: 1000px) {
-
-  .experience-card {
-    width: 25rem;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-
-}
-
 @media screen and (max-width: 860px) {
 
   .experience-card {
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 3rem;
   }
 
 }
@@ -52,7 +42,7 @@
 
   .experience-card {
     gap: 3rem;
-    padding: 2rem;
+    padding: 3rem;
   }
 
 }

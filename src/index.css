@@ -48,7 +48,7 @@
   --main-background-color: var(--dark-night);
   --background-section: #121212;
   --background-tag-color: #2A2A2A;
-  --menu-background: rgba(34, 34, 34, 0.9);
+  --menu-background: rgba(15, 15, 15, 0.9);
   --navbar-background: rgba(0, 0, 0, 0.5);
   --link-btn: var(--main-white);
   --hover-link-btn: var(--main-white);
@@ -118,8 +118,23 @@ a {
   background-color: var(--background-section);
 }
 
+@media screen and (max-width: 690px) {
+
+  .description {
+    text-align: center;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
+
   .subtitle-section {
     font-size: 1.5rem;
   }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
 }
