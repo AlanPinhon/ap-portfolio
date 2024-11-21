@@ -14,7 +14,6 @@
 .project-img {
   width: 50%;
   height: 100%;
-  background-position: center;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   object-fit: cover;
@@ -58,28 +57,19 @@
   }
 }
 
-@media screen and (max-width: 1010px) {
-
-  .project-content {
-    width: 28rem;
-  }
-
-}
-
 @media screen and (max-width: 900px) {
 
-  .project-content {
-    width: 24rem;
+  .project-card {
+    height: 30rem;
   }
-
 }
 
 
 @media screen and (max-width: 820px) {
 
   .project-card {
-    height: 100%;
     flex-direction: column;
+    height: 100%;
   }
 
   .project-img {

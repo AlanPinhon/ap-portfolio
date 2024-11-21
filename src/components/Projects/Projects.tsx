@@ -35,8 +35,7 @@ export const Projects = () => (
           img={DeepFeelsUI}
           altImg='Deep Feels UI'
           title='Deep Feels System Design'
-          description='Sistema de diseño desarrollado en Figma,
-          React & TypeScript que proporciona un conjunto coherente de
+          description='Sistema de diseño que proporciona un conjunto coherente de
           componentes reutilizables, estilos y pautas de diseño para
           facilitar el desarrollo de la aplicación Deep Feels.'
           tags={['React', 'TypeScript', 'Styled Components', 'Webpack', 'Storybook', 'Jest', 'Figma']}
@@ -53,7 +52,7 @@ export const Projects = () => (
           img={DeepFeelsBrand}
           altImg='Deep Feels Brand'
           title='Deep Feels Brand & Visual Identity'
-          description='Proyecto del desarrollo de la identidad visual de la
+          description='Desarrollo de la identidad visual de la
           marca Deep Feels; aplicación que ayuda a las personas a relajarse
           y mejorar su estado de ánimo, ofreciendo una gran variedad de sonidos
           relajantes.'
