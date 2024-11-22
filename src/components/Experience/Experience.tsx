@@ -4,101 +4,179 @@ import './ExperienceStyles.css';
 
 export const Experience = () => (
   <section id="experience" className="experience-container container">
-    <h2 className="title-section">Experiencia</h2>
+    <div className="title-container">
+      <h2 className="title-section">Experiencia</h2>
+      <p className='description'>Un breve resumen de mis experiencias más recientes:</p>
+    </div>
     
     <div className="experience-cards-container">
+      <ExperienceCard icon={<Icon name='WorkIcon'/>} subtitle='Laboral'>
+        <div className="experience-info">
+
+          <div className="work-container">
+            <div className="column">
+              <h4 className="job-place">CTP & Offset Trejo</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="job-title">Operador de Preprensa</h4>
+              <p className='job-description'>
+                - Formación de archivos para salida a offset
+                <br />
+                - Mantenimiento de maquinaria CTP
+                <br />
+                - Atención al cliente
+              </p>
+            </div>
+            <div className="column">
+              <p className="work-year">Ago 2018 - Sep 2020</p>
+            </div>
+          </div>
+
+          <div className="work-container">
+            <div className="column">
+              <h4 className="job-place">B&B Acabados S.A de C.V</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="job-title">Operador de Preprensa</h4>
+              <p className='job-description'>
+                - Formación de archivos para salida a offset
+                <br />
+                - Trabajo en equipo
+                <br />
+                - Mantenimiento de maquinaria CTP
+                <br />
+                - Atención al cliente
+              </p>
+            </div>
+            <div className="column">
+              <p className="work-year">May 2017 - May 2018</p>
+            </div>
+          </div>   
+
+          <div className="work-container">
+            <div className="column">
+              <h4 className="job-place">AFK Calidad y Servicio</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="job-title">Operador de Preprensa</h4>
+              <p className='job-description'>
+                - Formación de archivos para salida a offset
+                <br />
+                - Mantenimiento de maquinaria CTP
+                <br />
+                - Atención al cliente
+              </p>
+            </div>
+            <div className="column">
+              <p className="work-year">Ago 2015 - May 2017</p>
+            </div>
+          </div> 
+
+          <div className="work-container">
+            <div className="column">
+              <h4 className="job-place">Expresión Activa</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="job-title">Ayudante General</h4>
+              <p className='job-description'>
+                - Cargamento de material impreso
+                <br />
+                - Elaboración de placas de magnesio y zinc
+              </p>
+            </div>
+            <div className="column">
+              <p className="work-year">May 2015 - Ago 2015</p>
+            </div>
+          </div>
+
+          <div className="work-container">
+            <div className="column">
+              <h4 className="job-place">IMDI Impresión y Diseño</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="job-title">Operador de Preprensa</h4>
+              <p className='job-description'>
+                - Formación de archivos para salida a offset
+                <br />
+                - Retoque de fotografías
+                <br />
+                - Atención al cliente
+              </p>
+            </div>
+            <div className="column">
+              <p className="work-year">Nov 2013 - Abr 2015</p>
+            </div>
+          </div>  
+
+        </div>
+      </ExperienceCard>
+
       <ExperienceCard icon={<Icon name='EducationIcon'/>} subtitle='Académica'>
         <div className="experience-info">
 
           <div className="academy-container">
-            <h4 className="experience-title">React: De cero a experto ( Hooks y MERN )</h4>
-            <div className="container-source">
-              <p className="experience-paragraph">Fernando Herrera</p>
-              <a className='experience-link' href="https://www.udemy.com/course/react-cero-experto/" target='_blank'>Ir al curso</a>
+            <div className="column">
+              <h4 className="instructor-name">Fernando Herrera</h4>
             </div>
-          </div>
-
-          <div className="academy-container">
-            <h4 className="experience-title">TypeScript: Completa guía y manual de mano</h4>
-            <div className="container-source">
-              <p className="experience-paragraph">Fernando Herrera</p>
+            <div className="column exp-info">
+              <h4 className="course-title">React: De cero a experto ( Hooks y MERN )</h4>
+              <p className='course-projects'>
+                - Heroes App Project
+                <br />
+                - GIF Expert App Project
+              </p>
+            </div>
+            <div className="column">
               <a className='experience-link' href="https://www.udemy.com/course/typescript-guia-completa/" target='_blank'>Ir al curso</a>
             </div>
           </div>
 
           <div className="academy-container">
-            <h4 className="experience-title">JavaScript Moderno Guía Definitiva</h4>
-            <div className="container-source">
-              <p className="experience-paragraph">Juan Pablo de la Torre Valdez</p>
+            <div className="column">
+              <h4 className="instructor-name">Fernando Herrera</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="course-title">TypeScript: Completa guía y manual de mano</h4>
+            </div>
+            <div className="column">
+              <a className='experience-link' href="https://www.udemy.com/course/typescript-guia-completa/" target='_blank'>Ir al curso</a>
+            </div>
+          </div>
+
+          <div className="academy-container">
+            <div className="column">
+              <h4 className="instructor-name">Juan Pablo de la Torre Valdez</h4>
+            </div>
+            <div className="column exp-info">
+              <h4 className="course-title">JavaScript Moderno Guía Definitiva</h4>
+              <p className='course-projects'>
+                - Carrito de compras con Local Storage
+                <br />
+                - Buscador de imágenes con Pixabay API
+                <br />
+                - Cotizador de Criptomonedas
+              </p>
+            </div>
+            <div className="column">
               <a className='experience-link' href="https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/" target='_blank'>Ir al curso</a>
             </div>
           </div>
 
           <div className="academy-container">
-            <h4 className="experience-title">Diseño Web Desde Cero a Avanzado</h4>
-            <div className="container-source">
-              <p className="experience-paragraph">Jose Javier Villena</p>
-              <a className='experience-link' href="https://www.udemy.com/course/diseno-web-desde-cero/" target='_blank'>Ir al curso</a>
+            <div className="column">
+              <h4 className="instructor-name">CETIS No. 165</h4>
             </div>
-          </div>
-
-          <div className="academy-container">
-            <h4 className="experience-title">CETIS 165 - Bachillerato Tecnológico</h4>
-            <div className="container-source">
-              <p className="experience-paragraph">Técnico en Diseño Gráfico</p>
-              <p className="experience-paragraph academy-year">2007-2011</p>
+            <div className="column exp-info">
+              <h4 className="course-title">Técnico en Diseño y Proyecto Gráfico</h4>
+            </div>
+            <div className="column">
+              <p className="work-year">Gen 2007 - 2011</p>
             </div>
           </div>
 
         </div>
+
       </ExperienceCard>
-
-      <ExperienceCard icon={<Icon name='WorkIcon'/>} subtitle='Laboral'>
-        <div className="experience-info">
-
-          <div className="work-container">
-            <div className="container-source">
-              <h4 className="experience-title">CTP & Offset Trejo</h4>
-              <h4 className="work-year">08/2018 - 09/2020</h4>
-            </div>
-            <p className="experience-paragraph">Operador de Preprensa</p>
-          </div>
-          
-          <div className="work-container">
-            <div className="container-source">
-              <h4 className="experience-title">B&B Acabados</h4>
-              <h4 className="work-year">05/2017 - 05/2018</h4>
-            </div>
-            <p className="experience-paragraph">Operador de Preprensa</p>
-          </div>
-
-          <div className="work-container">
-            <div className="container-source">
-              <h4 className="experience-title">AFK Calidad y Servicio</h4>
-              <h4 className="work-year">08/2015 - 05/2017</h4>
-            </div>
-            <p className="experience-paragraph">Operador de Preprensa</p>
-          </div>
-
-          <div className="work-container">
-            <div className="container-source">
-              <h4 className="experience-title">Expresión Activa</h4>
-              <h4 className="work-year">05/2015 - 08/2015</h4>
-            </div>
-            <p className="experience-paragraph">Ayudante General</p>
-          </div>
-
-          <div className="work-container">
-            <div className="container-source">
-              <h4 className="experience-title">IMDI Impresión y Diseño</h4>
-              <h4 className="work-year">11/2013 - 04/2015</h4>
-            </div>
-            <p className="experience-paragraph">Operador de Preprensa</p>
-          </div>
-
-        </div>
-      </ExperienceCard>
-
     </div>
   </section>
 )

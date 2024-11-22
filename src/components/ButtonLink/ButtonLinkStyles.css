@@ -1,8 +1,8 @@
 .btn-link {
   line-height: .75rem;
-  color: var(--rock-red);
   padding: .75rem 1.25rem;
-  border: 1px solid var(--rock-red);
+  color: var(--link-btn);
+  border: 1px solid var(--link-btn);
   border-radius: .5rem;
   display: flex;
   justify-content: center;
@@ -13,16 +13,16 @@
   & .link-icon {
     width: 1rem;
     height: 1rem;
-    fill: var(--rock-red);
+    fill: var(--link-btn);
     transition: all .15s ease-in-out;
   }
 
   &:hover {
-    color: var(--main-white);
-    background-color: var(--rock-red);
+    color: var(--hover-text-btn);
+    background-color: var(--hover-link-btn);
 
     & .link-icon {
-      fill: var(--main-white);
+      fill: var(--hover-text-btn);
     }
   }
 

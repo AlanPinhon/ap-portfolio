@@ -1,79 +1,84 @@
 .project-card {
   width: 100%;
+  height: 26rem;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-radius: 1rem;
+  background-color: var(--main-background-color);
+  box-shadow: var(--shadow);
 }
 
 .project-img {
-  width: auto;
-  height: 15rem;
-  border-radius: 1rem;
-  border: 1px solid var(--border-color);
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  object-fit: cover;
 }
 
 .project-content {
-  width: 32.75rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  padding: 3rem;
+  gap: 2rem;
 
-  & .project-title{
-    font-size: var(--subtitle-size);
-    font-weight: var(--outfit-semi-bold);
-  }
-
-  & .tag-container {
+  & .project-info {
     display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-  }
+    flex-direction: column;
+    gap: 1.5rem;
 
-  & .project-description {
-    font-weight: var(--outfit-light);
+    & .project-title{
+      color: var(--rock-red);
+      font-size: var(--subtitle-size);
+      font-weight: var(--outfit-semi-bold);
+    }
+  
+    & .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+  
+    & .project-description {
+      line-height: 1.5rem;
+      font-weight: var(--outfit-regular);
+    }
+    
   }
 
   & .links-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 }
 
-@media screen and (max-width: 1010px) {
-
-  .project-img {
-    width: auto;
-    height: 13rem;
-  }
-
-  .project-content {
-    width: 28rem;
-  }
-
-}
-
 @media screen and (max-width: 900px) {
 
-  .project-content {
-    width: 24rem;
+  .project-card {
+    height: 30rem;
   }
-
 }
 
 
 @media screen and (max-width: 820px) {
 
   .project-card {
-    width: 90%;
     flex-direction: column;
-    gap: 2rem;
+    height: 100%;
   }
 
   .project-img {
     width: 100%;
-    height: auto;
+    height: 21.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .project-content {
@@ -85,13 +90,15 @@
 
 @media screen and (max-width: 480px) {
 
-  .project-card {
-    width: 100%;
-    gap: 2rem;
+  .project-img {
+    height: 100%;
   }
 
-  .project-content .project-title {
-    font-size: var(--hero-text-size);
-    line-height: var(--hero-text-size);
+  .project-content {
+    padding: 2rem;
+
+    & .project-title {
+      font-size: var(--hero-text-size);
+    }
   }
 }

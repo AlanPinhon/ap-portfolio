@@ -6,22 +6,24 @@
   --main-white: #fff;
   --rock-red: #ff2d2d;
   --soft-gray: #e4e4e4;
-  --dark-night: #0e0e10;
-  --light-gray: #ddd;
+  --dark-night: #1A1A1A;
+  --light-gray: #DFDFDF;
   --dark-gray: #404040;
+  --shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   /* Gradients */
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
-  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(222, 222, 222) 0%, rgb(171, 171, 171) 100%);
+  --background-section: #F9FAFB;
+  --background-tag-color: var(--soft-gray);
   
   /* Background & Elements Colors */
   --main-background-color: var(--main-white);
-  --back-btn-theme: var(--soft-gray);
-  --hover-btn-theme: var(--dark-night);
+  --link-btn: var(--rock-red);
+  --hover-link-btn: #CC0000;
+  --hover-text-btn: var(--main-white);
   --main-text-color: var(--main-black);
   --menu-background: rgba(238, 238, 238, 0.9);
   --navbar-background: rgba(255, 255, 255, 0.5);
-  --back-experience-card: #F0F0F0;
+  --back-experience-card: #F9FAFB;
   --border-color: var(--light-gray);
   --secondary-text-color: var(--dark-gray);
 
@@ -35,22 +37,23 @@
   --outfit-medium: 500;
   --outfit-semi-bold: 600;
   --outfit-bold: 700;
-  --title-size: 3rem;
+  --title-size: 2.5rem;
   --subtitle-size: 2rem;
   --hero-text-size: 1.5rem;
-  --about-me-size: 1.1rem;
+  --about-me-size: 1.25rem;
   --links-size: 1rem;
 }
 
 [data-theme="dark"] {
   --main-background-color: var(--dark-night);
-  --gradient-header: radial-gradient(100% 50% at center top, rgb(42.5, 42.5, 42.5) 0%, rgb(14, 14, 16) 100%);
-  --photo-gradient: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgb(201, 201, 201) 100%);
-  --menu-background: rgba(34, 34, 34, 0.9);
+  --background-section: #121212;
+  --background-tag-color: #2A2A2A;
+  --menu-background: rgba(15, 15, 15, 0.9);
   --navbar-background: rgba(0, 0, 0, 0.5);
-  --back-btn-theme: var(--dark-night);
-  --hover-btn-theme: var(--soft-gray);
-  --back-experience-card: #18181B;
+  --link-btn: var(--main-white);
+  --hover-link-btn: var(--main-white);
+  --hover-text-btn: var(--rock-red);
+  --back-experience-card: #2A2A2A;
   --border-color: var(--dark-gray);
   --secondary-text-color: var(--light-gray);
   --main-text-color: var(--main-white);
@@ -79,10 +82,8 @@ body{
 
 .title-section {
   font-size: var(--title-size);
-  line-height: var(--title-size);
-  letter-spacing: .15rem;
-  font-family: var(--cheddar-font);
-  font-weight: var(--cheddar-regular);
+  font-family: var(--outfit-font);
+  font-weight: var(--outfit-bold);
   color: var(--rock-red);
 }
 
@@ -90,6 +91,12 @@ body{
   font-size: var(--subtitle-size);
   font-weight: var(--outfit-medium);
   color: var(--rock-red);
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: var(--outfit-light);
 }
 
 a {
@@ -105,16 +112,29 @@ a {
   }
 }
 
-.back-gradient {
+.background-section {
   width: 100%;
-  height: 700px;
-  position: absolute;
-  z-index: -1000;
-  background: var(--gradient-header);
+  z-index: -2000;
+  background-color: var(--background-section);
+}
+
+@media screen and (max-width: 690px) {
+
+  .description {
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
+
   .subtitle-section {
     font-size: 1.5rem;
   }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
 }

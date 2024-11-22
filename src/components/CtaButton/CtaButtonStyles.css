@@ -1,0 +1,44 @@
+.contact-btn {
+  padding: 1.25rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--outfit-font);
+  line-height: .75rem;
+  font-weight: var(--outfit-bold);
+  border-radius: .75rem;
+  cursor: pointer;
+  transition: .15s ease-in-out;
+
+  &.primary {
+    background-color: var(--rock-red);
+    color: var(--main-white);
+
+    &:hover {
+      background-color: #cc0000;
+      color: var(--main-white);
+    }
+  }
+
+  &.secondary {
+    border: solid 1px var(--rock-red);
+    color: var(--rock-red);
+
+    &:hover {
+      border-color: #FF6060;
+      background-color: #FF6060;
+      color: var(--main-white);
+    }
+  }
+
+  &.white {
+    border: solid 1px var(--main-white);
+    color: var(--main-white);
+
+    &:hover {
+      border-color: var(--main-white);
+      background-color: var(--main-white);
+      color: var(--rock-red);
+    }
+  }
+
+}
