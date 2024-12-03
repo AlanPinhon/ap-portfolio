@@ -51,13 +51,16 @@
   flex-direction: column;
   padding: .5rem;
   opacity: 0;
+  visibility: hidden;
+  box-shadow: var(--shadow);
   border-radius: .25rem;
   background-color: var(--menu-background);
   border: 1px solid var(--border-color);
   transform: translateY(-10px);
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
 
   &.open {
+    visibility: visible;
     opacity: 1;
     transform: translateY(0)
   }
@@ -153,6 +156,7 @@
     left: -2rem;
     right: unset;
     transform: translateY(0);
+    background-color: var(--main-background-color);
 
     &.open {
       opacity: 1;

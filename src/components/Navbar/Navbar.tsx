@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import LightLogo from '../../assets/img/ap-logos/black-logo-ap-horizontal.svg';
 import DarkLogo from '../../assets/img/ap-logos/white-logo-ap-horizontal.svg';
+import { prefersDarkTheme } from '../../helpers/prefersDarkTheme';
 import { ThemeContext } from '../../context/ThemeContext';
 import { Icon } from '../../assets/icons/Icon';
 import './NavbarStyles.css'
@@ -17,22 +18,12 @@ export const Navbar = () => {
   const toggleThemeMenu = () => setIsThemeMenuOpen(!isThemeMenuOpen);
   const closeMenu = () => setIsOpen(false);
   
-  const toggleTheme = (selectedTheme: string) => {
-    if(selectedTheme === 'system') {
-      setThemeMode('system')
-      localStorage.setItem('themeMode', 'system');
-
-      const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const systemTheme = prefersDarkTheme ? 'dark' : 'light';
-
-      setTheme(systemTheme);
-      localStorage.setItem('theme', systemTheme);
-    } else {
-      setTheme(selectedTheme);
-      setThemeMode('manual');
-      localStorage.setItem('theme', selectedTheme);
-      localStorage.setItem('themeMode', 'manual');
-    }
+  const toggleTheme = (selectedTheme: 'system' | 'dark' | 'light') => {
+    const themeToSet = (selectedTheme === 'system') ? prefersDarkTheme() : selectedTheme;
+    setTheme(themeToSet);
+    setThemeMode((selectedTheme === 'system') ? 'system' : 'manual');
+    localStorage.setItem('theme', themeToSet);
+    localStorage.setItem('themeMode', (selectedTheme === 'system') ? 'system' : 'manual');
     setIsThemeMenuOpen(false);
   };
 

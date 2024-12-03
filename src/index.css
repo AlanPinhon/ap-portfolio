@@ -73,6 +73,9 @@ html {
 body{
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+  transition: background-color .2s ease-in-out,
+              color .2s ease-in-out.
+              border-color .2s ease-in-out;
 }
 
 .container {
@@ -116,6 +119,7 @@ a {
   width: 100%;
   z-index: -2000;
   background-color: var(--background-section);
+  transition: background-color .2s ease-in-out;
 }
 
 @media screen and (max-width: 690px) {
