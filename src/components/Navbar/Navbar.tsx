@@ -8,7 +8,7 @@ import './NavbarStyles.css'
 export const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const {theme, setTheme, setThemeMode} = useContext(ThemeContext);
+  const {theme, setTheme, themeMode, setThemeMode} = useContext(ThemeContext);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -64,7 +64,9 @@ export const Navbar = () => {
 
         <div ref={containerRef} className="theme-menu-container">
           <button onClick={toggleThemeMenu} className="theme-btn">
-            <Icon name={(theme === 'light') ? 'LightIcon' : 'DarkIcon'}/>
+            <Icon name={
+              (themeMode === 'system') ? 'MonitorIcon' : (theme === 'light') ? 'LightIcon' : 'DarkIcon'
+            }/>
           </button>
           <div ref={menuRef} className={`theme-menu ${isThemeMenuOpen ? 'open' : ''}`}>
             <button onClick={() => toggleTheme('light')} className="theme-option">Light</button>

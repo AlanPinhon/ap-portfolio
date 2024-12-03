@@ -70,6 +70,7 @@
   background: none;
   color: var(--main-text-color);
   text-align: start;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--border-color);
@@ -145,6 +146,23 @@
   .theme-btn .theme-icon {
     width: 2.25rem;
     height: 2.25rem;
+  }
+
+  .theme-menu {
+    top: -10rem;
+    left: -2rem;
+    right: unset;
+    transform: translateY(0);
+
+    &.open {
+      opacity: 1;
+      transform: translateY(-1rem)
+    }
+  }
+  
+  .theme-option {
+    padding: .75rem;
+    font-size: 1.1rem;
   }
 
   .header-nav{

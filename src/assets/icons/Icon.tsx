@@ -1,4 +1,4 @@
-import {BehanceIcon, CloseIcon, DarkIcon, EducationIcon, GithubIcon, HamburgerIcon, LightIcon, LinkIcon, LinkedinIcon, WorkIcon} from '../icons';
+import {BehanceIcon, CloseIcon, DarkIcon, EducationIcon, GithubIcon, HamburgerIcon, LightIcon, LinkIcon, LinkedinIcon, MonitorIcon, WorkIcon} from '../icons';
 
 const Icons = {
   BehanceIcon,
@@ -10,6 +10,7 @@ const Icons = {
   LightIcon,
   LinkIcon,
   LinkedinIcon,
+  MonitorIcon,
   WorkIcon
 }
 
@@ -23,6 +24,7 @@ export type IconName =
 'LightIcon' |
 'LinkIcon' |
 'LinkedinIcon' |
+'MonitorIcon' |
 'WorkIcon';
 
 export type IconProps = {
