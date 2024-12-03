@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import LightLogo from '../../assets/img/ap-logos/black-logo-ap-horizontal.svg';
 import DarkLogo from '../../assets/img/ap-logos/white-logo-ap-horizontal.svg';
 import { ThemeContext } from '../../context/ThemeContext';
@@ -9,9 +9,15 @@ export const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const {theme, setTheme, setThemeMode} = useContext(ThemeContext);
+  const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleThemeMenu = () => setIsThemeMenuOpen(!isThemeMenuOpen);
+  const closeMenu = () => setIsOpen(false);
   
   const toggleTheme = (selectedTheme: string) => {
-
     if(selectedTheme === 'system') {
       setThemeMode('system')
       localStorage.setItem('themeMode', 'system');
@@ -27,11 +33,19 @@ export const Navbar = () => {
       localStorage.setItem('theme', selectedTheme);
       localStorage.setItem('themeMode', 'manual');
     }
+    setIsThemeMenuOpen(false);
   };
-  
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false);
 
+  useEffect(() => {
+    const handleClickOutside = (e: Event) => {
+      if(!containerRef.current?.contains(e.target as Node)){
+        setIsThemeMenuOpen(false)
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+  
   return (
     <section id="navbar" className="nav-container container">
 
@@ -48,13 +62,15 @@ export const Navbar = () => {
 
         <div className="separator"></div>
 
-        <button className="theme-btn">
-          <Icon name={(theme === 'light') ? 'DarkIcon' : 'LightIcon'}/>
-        </button>
-        <div className="theme-menu">
-          <button onClick={() => toggleTheme('light')} className="theme-option">Light</button>
-          <button onClick={() => toggleTheme('dark')} className="theme-option">Dark</button>
-          <button onClick={() => toggleTheme('system')} className="theme-option">Sistema</button>
+        <div ref={containerRef} className="theme-menu-container">
+          <button onClick={toggleThemeMenu} className="theme-btn">
+            <Icon name={(theme === 'light') ? 'LightIcon' : 'DarkIcon'}/>
+          </button>
+          <div ref={menuRef} className={`theme-menu ${isThemeMenuOpen ? 'open' : ''}`}>
+            <button onClick={() => toggleTheme('light')} className="theme-option">Light</button>
+            <button onClick={() => toggleTheme('dark')} className="theme-option">Dark</button>
+            <button onClick={() => toggleTheme('system')} className="theme-option">Sistema</button>
+          </div>
         </div>
       </nav>
 
