@@ -7,4 +7,5 @@ export * from './HamburgerIcon';
 export * from './LightIcon';
 export * from './LinkIcon';
 export * from './LinkedinIcon';
+export * from './MonitorIcon';
 export * from './WorkIcon';

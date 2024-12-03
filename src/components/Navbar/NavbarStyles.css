@@ -15,6 +15,10 @@
   }
 }
 
+.theme-menu-container {
+  position: relative;
+}
+
 .theme-btn {
   display: flex;
   justify-content: center;
@@ -27,12 +31,53 @@
   & .theme-icon {
     width: 1.25rem;
     height: 1.25rem;
+
+    & path {
+      stroke: var(--main-text-color);
+    }
   }
 
   &:hover {
     transform: scale(125%);
   }
 
+}
+
+.theme-menu {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: var(--shadow);
+  border-radius: .25rem;
+  background-color: var(--menu-background);
+  border: 1px solid var(--border-color);
+  transform: translateY(-10px);
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+.theme-option {
+  padding: .5rem .75rem;
+  border:  none;
+  border-radius: .15rem;
+  background: none;
+  color: var(--main-text-color);
+  text-align: start;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--border-color);
+  }
 }
 
 .nav-ap-logo {
@@ -104,6 +149,24 @@
   .theme-btn .theme-icon {
     width: 2.25rem;
     height: 2.25rem;
+  }
+
+  .theme-menu {
+    top: -10rem;
+    left: -2rem;
+    right: unset;
+    transform: translateY(0);
+    background-color: var(--main-background-color);
+
+    &.open {
+      opacity: 1;
+      transform: translateY(-1rem)
+    }
+  }
+  
+  .theme-option {
+    padding: .75rem;
+    font-size: 1.1rem;
   }
 
   .header-nav{
