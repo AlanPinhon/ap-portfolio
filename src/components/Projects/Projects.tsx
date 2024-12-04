@@ -26,7 +26,7 @@ export const Projects = () => (
           ofrecer alimentos naturales que promuevan un estilo de vida equilibrado.'
           tags={['Photoshop', 'Illustrator']}
         >
-          <ButtonLink href='https://www.behance.net/gallery/209430543/HelseBites-Snacks-Visual-Identity'>
+          <ButtonLink href='https://www.behance.net/gallery/209782003/HelseBites-Healthy-Snacks-Visual-Identity'>
             <Icon name='LinkIcon'/>
             Proyecto</ButtonLink>
         </ProjectCard>
