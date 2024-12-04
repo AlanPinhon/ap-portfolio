@@ -1,5 +1,5 @@
 import { CtaButton } from "../CtaButton/CtaButton"
-import AlanPhoto from '../../assets/img/ap-photos/portfolio-img-fondo.png';
+import AlanPhoto from '../../assets/img/ap-photos/portfolio-img-fondo.webp';
 import { ThemeContext } from "../../context/ThemeContext";
 import { useContext } from "react";
 import './HeaderStyles.css';

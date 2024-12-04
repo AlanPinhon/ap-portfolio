@@ -1,8 +1,8 @@
 import { ProjectCard } from '../ProjectCard/ProjectCard';
-import HelseBitesBrand from '../../assets/img/project-img/helsebites-project-cover.png';
-import DeepFeelsUI from '../../assets/img/project-img/deep-feels-ui-design-cover.png';
-import DeepFeelsBrand from '../../assets/img/project-img/deep-feels-app-cover.png';
-import RestCountries from '../../assets/img/project-img/countries-cover.png';
+import HelseBitesBrand from '../../assets/img/project-img/helsebites-project-cover.webp';
+import DeepFeelsUI from '../../assets/img/project-img/deep-feels-ui-design-cover.webp';
+import DeepFeelsBrand from '../../assets/img/project-img/deep-feels-app-cover.webp';
+import RestCountries from '../../assets/img/project-img/countries-cover.webp';
 import { ButtonLink } from '../ButtonLink/ButtonLink';
 import { Icon } from '../../assets/icons/Icon';
 import './ProjectsStyles.css';
