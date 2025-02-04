@@ -1,4 +1,5 @@
 import { ProjectCard } from '../ProjectCard/ProjectCard';
+import SeronaBrand from '../../assets/img/project-img/serona-cover.jpg';
 import HelseBitesBrand from '../../assets/img/project-img/helsebites-project-cover.webp';
 import DeepFeelsUI from '../../assets/img/project-img/deep-feels-ui-design-cover.webp';
 import DeepFeelsBrand from '../../assets/img/project-img/deep-feels-app-cover.webp';
@@ -16,6 +17,21 @@ export const Projects = () => (
       </div>
 
       <div className="project-cards-container">
+
+        
+      <ProjectCard
+          img={SeronaBrand}
+          altImg='Serona Brand'
+          title='Serona Visual Identity'
+          description='Proyecto de la identidad visual de la marca
+          Serona, una marca de ropa que se distingue por su diseño
+          minimalista y atemporal que combina elegancia y comodidad.'
+          tags={['Photoshop', 'After Effects','Illustrator']}
+        >
+          <ButtonLink href='https://www.behance.net/gallery/218423125/SERONA-Fashion-Visual-Identity'>
+            <Icon name='LinkIcon'/>
+            Proyecto</ButtonLink>
+        </ProjectCard>
 
         <ProjectCard
           img={HelseBitesBrand}
